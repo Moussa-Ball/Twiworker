@@ -11,9 +11,7 @@ Auth::routes(['verify' => true]);
 *--------------------------------------------------------------------------
 */
 Route::group(['middleware' => 'guest'], function () {
-    Route::get('/', function () {
-        return view('welcome');
-    });
+    Route::get('/', 'HomeController@index')->name('home.index');
 });
 
 /*
@@ -22,5 +20,5 @@ Route::group(['middleware' => 'guest'], function () {
 *--------------------------------------------------------------------------
 */
 Route::group(['middleware' => ['auth', 'verified']], function () {
-    Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/feed', 'JobController@index')->name('jobs.index');
 });
