@@ -2,7 +2,6 @@ require("laravel-mix-purgecss");
 const mix = require("laravel-mix");
 const tailwindcss = require("tailwindcss");
 
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -22,8 +21,7 @@ mix.disableNotifications()
         postCss: [tailwindcss("tailwind.config.js")]
     })
     .purgeCss({
-        //enabled: mix.inProduction(),
-        enabled: true,
+        enabled: mix.inProduction(),
         folders: ["src", "templates"],
         extensions: ["html", "js", "php", "vue"]
     });
