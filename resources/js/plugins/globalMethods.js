@@ -3,7 +3,7 @@
  */
 
 const GlobalMethods = {
-  install() {}
+  install() {},
 };
 
 export default GlobalMethods;

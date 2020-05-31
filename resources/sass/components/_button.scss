@@ -1,0 +1,12 @@
+.user-presence {
+    button {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        box-shadow: 0 0 6px rgba(#000000, .20);
+    }
+    
+    button.active {
+        background-color: $primary-color !important;
+        color: #ffffff !important;
+    }
+}

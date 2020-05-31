@@ -33,6 +33,7 @@
         "webpack": "^4.41.2"
     },
     "dependencies": {
+        "bootstrap-4-grid": "^3.4.0",
         "register-service-worker": "^1.7.1",
         "tailwindcss": "^1.4.6",
         "vue-axios": "^2.1.5",

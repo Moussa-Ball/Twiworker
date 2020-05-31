@@ -7,7 +7,7 @@
 
 const OnlinePresence = {
   // eslint-disable-next-line no-unused-vars
-  install(Vue) {}
+  install(Vue) {},
 };
 
 export default OnlinePresence;
