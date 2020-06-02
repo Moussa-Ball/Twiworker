@@ -1,9 +1,9 @@
 import VueAxios from 'vue-axios';
+window.axios = require('axios');
 
 // Import layouts
 import Navbar from '../layouts/Navbar';
-
-window.axios = require('axios');
+import Footer from '../layouts/Footer';
 
 export default {
   install(Vue) {
@@ -12,5 +12,6 @@ export default {
 
     // Register components.
     Vue.component('navbar', Navbar);
+    Vue.component('footerr', Footer);
   },
 };

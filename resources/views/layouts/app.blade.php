@@ -11,6 +11,7 @@
 <body>
     <div id="app">
         <navbar></navbar>
+        <footerr></footerr>
     </div>
 </body>
 </html>

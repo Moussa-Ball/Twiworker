@@ -55,6 +55,7 @@
   width: 300px;
   top: 38px !important;
   right: -10px;
+  @apply z-50;
   &:before {
       content: "";
       position: absolute;

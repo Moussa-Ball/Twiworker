@@ -23,6 +23,7 @@
         "jsdom-global": "^3.0.2",
         "laravel-mix": "^5.0.1",
         "laravel-mix-purgecss": "^5.0.0",
+        "laravel-mix-tailwind": "^0.1.0",
         "mocha": "^6.2.2",
         "mochapack": "^1.1.13",
         "resolve-url-loader": "^2.3.1",

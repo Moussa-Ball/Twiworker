@@ -56,10 +56,10 @@
             <a class="nav-link" href="#">Freelancers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reports</a>
+            <a class="nav-link" href="#">Profile</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Profile Stats</a>
+            <a class="nav-link" href="#">Reports</a>
           </li>
         </ul>
       </div>

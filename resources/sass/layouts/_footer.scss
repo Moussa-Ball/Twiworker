@@ -1,0 +1,105 @@
+.footer {
+  background-color: #0E1021;
+  @apply relative flex flex-wrap items-center justify-between text-white w-full shadow-md pl-6 pr-6 pt-4 pb-4;
+
+  > .container {
+    @apply flex flex-wrap items-center justify-between ml-auto mr-auto;
+  }
+
+  .section-logo-and-dropdown-language {
+    @apply flex justify-between items-center w-full py-16;
+  }
+
+  .btn {
+    @apply flex justify-between items-center border border-white rounded-none select-none outline-none pt-2 pb-2 pl-4 pr-4;
+    box-shadow: 0 0 6px rgba(#000000, .20);
+    .btn-text {
+      padding-right: 10px;
+    }
+    .btn-icon {
+      position: relative;
+      top: 0.5px;
+    }
+  }
+
+  .dropdown-menu {
+    @apply mt-3;
+    position: absolute; 
+    transform: translate3d(-48px, 48px, 0px); 
+    top: 0px; 
+    left: 0px; 
+    will-change: transform;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      right: 18px;
+      border: 6px solid #fff; 
+      transform: translateX(-40%) rotate(135deg);
+      box-shadow: -2px 2px 4px rgba(50, 50, 50, .12);
+      z-index: 10;
+    }
+  }
+
+  .footer-line {
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 0.5px;
+    opacity: .10;
+    @apply mb-16;
+  }
+
+  .footer-line.second {
+      @apply mt-16 mb-8;
+  }
+
+  .footer-menu {
+    @apply flex flex-wrap flex-row justify-between w-full select-none;
+
+    .footer-menu-item {
+      @apply flex flex-col;
+
+      h4 {
+        @apply text-lg font-medium mb-8 uppercase;
+      }
+
+      .footer-menu-item-list {        
+        li {
+          @apply list-none py-2 w-full;
+          
+          a {
+            @apply text-base text-gray-100 font-normal;
+            text-decoration: none;
+            
+            &:hover {
+              @apply text-white underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright-section {
+  @apply flex justify-center items-center select-none w-full my-8;
+}
+
+@media (max-width: 992px) {
+  .footer .dropdown-menu.show {
+      display: block!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-menu {
+    .footer-menu-item {
+      @apply w-1/2 mb-12;
+    }
+  }
+
+  .footer-line.second {
+    margin-top: 0 !important;
+  }
+}
