@@ -13,8 +13,13 @@ require('laravel-mix-purgecss');
  | file for the application as well as bundling up all the JS files.
  |
  */
+
+ mix.browserSync({
+  proxy: '127.0.0.1:8000'
+});
+
 mix.disableNotifications()
   .js('resources/js/app.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css')
-  .tailwind()
-  .purgeCss();
+  .purgeCss({enabled: true})
+  .tailwind();

@@ -58,10 +58,10 @@
     @apply flex flex-wrap flex-row justify-between w-full select-none;
 
     .footer-menu-item {
-      @apply flex flex-col;
+      @apply flex flex-col mx-auto;
 
       h4 {
-        @apply text-lg font-medium mb-8 uppercase;
+        @apply text-sm font-medium mb-8 uppercase;
       }
 
       .footer-menu-item-list {        
@@ -69,7 +69,7 @@
           @apply list-none py-2 w-full;
           
           a {
-            @apply text-base text-gray-100 font-normal;
+            @apply text-footer-link font-light;
             text-decoration: none;
             
             &:hover {

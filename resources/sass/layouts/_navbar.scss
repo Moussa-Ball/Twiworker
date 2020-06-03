@@ -38,7 +38,7 @@
   .nav-item {
     display: list-item;
     text-align: -webkit-match-parent;
-    @apply text-gray-700 text-sm font-normal uppercase cursor-pointer;
+    @apply font-gotham-rounded text-link text-gray-600 font-normal uppercase cursor-pointer;
 
     &:hover {
       color: $primary-color;

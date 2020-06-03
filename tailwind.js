@@ -1,6 +1,10 @@
 module.exports = {
     purge: [],
     theme: {
+        fontFamily: {
+            'gotham-rounded': ['Gotham Rounded'],
+            'gotham-rounded-book': ['Gotham Rounded Book']
+        },
         screens: {
           'sm': {'min': '576px', 'max': '575.98px'},
           'sm-min': {'min': '576px'},
@@ -24,11 +28,21 @@ module.exports = {
             "108": "27rem",
             "160": "40rem"
         },
+        backgroundColor: {
+            "primary": "#293fdf",
+            "another": "#53D121",
+        },
+        textColor: {
+            "primary": "#293fdf",
+            "another": "#53D121",
+        },
         inset: {
             "2": "20px",
         },
         fontSize: {
-            xxs: "0.625rem"
+            xxs: "0.68rem",
+            link: "13px",
+            'footer-link': "15px",
         },
         boxShadow: {
             "dropdown": "0 0 6px rgba(50 ,50 , 50, .25)"

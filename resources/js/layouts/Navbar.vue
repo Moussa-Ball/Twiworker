@@ -69,7 +69,7 @@
           <div class="navbar-item-right flex justify-between items-center">
             <SearchComponent/>
             <navicon type="message" :counter="95" />
-            <navicon type="notification" :counter="150" />
+            <navicon type="notification" :counter="70" />
           </div>
           <AccountDropdown />
         </ul>

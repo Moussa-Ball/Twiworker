@@ -45,7 +45,7 @@
     font-weight: 400;
     text-align: inherit;
     white-space: nowrap;
-    @apply bg-transparent border-none text-gray-800 text-base font-normal capitalize;
+    @apply bg-transparent font-gotham-rounded text-sm font-normal text-gray-600 capitalize border-none;
 
     &:hover, &:focus {
         @apply text-white;;
