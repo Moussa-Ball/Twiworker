@@ -1,7 +1,5 @@
 const mix = require('laravel-mix');
 require('laravel-mix-tailwind');
-require('laravel-mix-purgecss');
-
 
 /*
  |--------------------------------------------------------------------------
@@ -14,12 +12,13 @@ require('laravel-mix-purgecss');
  |
  */
 
- mix.browserSync({
-  proxy: '127.0.0.1:8000'
-});
+mix.browserSync('localhost:8000');
 
 mix.disableNotifications()
-  .js('resources/js/app.js', 'public/js')
-  .sass('resources/sass/app.scss', 'public/css')
-  .purgeCss({enabled: true})
-  .tailwind();
+   .js('resources/js/app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css')
+   .tailwind();
+
+if (mix.inProduction()) {
+  mix.version();
+}

@@ -1,0 +1,19 @@
+.form-input, .form-checkbox {
+    box-shadow: none !important;
+}
+
+.form-checkbox {
+    &:focus {
+        border-color: inherit !important;
+    }
+
+    &:checked {
+        @apply bg-primary border-primary;
+    }
+}
+
+textarea, input[type] {
+    &:focus {
+        @apply border-primary shadow-inner transition duration-75 ease-in-out;
+    }
+}

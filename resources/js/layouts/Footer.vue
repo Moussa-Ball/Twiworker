@@ -1,6 +1,6 @@
 <template>
-  <footer class="footer font-light">
-    <div class="container">
+  <footer class="bg-footer relative flex flex-wrap items-center justify-between text-white w-full shadow-md pl-6 pr-6 pt-4 pb-4 font-light">
+    <div class="container flex flex-wrap items-center justify-between ml-auto mr-auto">
       <!-- Logo & Dropdown Button For Language-->
       <div class="section-logo-and-dropdown-language">
         <div>
@@ -25,10 +25,10 @@
       </div>
 
       <!-- Footer Line -->
-      <div class="footer-line"></div>
+      <!--<div class="footer-line"></div>
 
       <!-- Footer Menu -->
-      <div class="footer-menu">
+      <!--<div class="footer-menu">
         <div class="footer-menu-item">
           <h4>About</h4>
           <ul class="footer-menu-item-list">
@@ -89,15 +89,15 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div>-->
 
       <!-- Footer Line -->
-      <div class="footer-line second"></div>
+      <!--<div class="footer-line second"></div>
 
       <!-- Copyright Text -->
-      <div class="copyright-section">
+      <!--<div class="copyright-section">
         <span>© 2020 Twiworker.</span>
-      </div>
+      </div>-->
     </div>
   </footer>
 </template>

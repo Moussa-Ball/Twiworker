@@ -1,7 +1,7 @@
 <template>
   <div v-click-outside="hide" class="dropdown">
     <button @click="open = !open" class="btn">
-      <span class="btn-text">English</span>
+      <span class="btn-text text-link">English</span>
       <span class="btn-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="13.389" height="7.865" viewBox="0 0 13.389 7.865">
           <g id="back" transform="translate(0 7.865) rotate(-90)">

@@ -7,7 +7,16 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+    }
+
+    /**
+     * Show the application dashboard.
      *
      * @return \Illuminate\Http\Response
      */

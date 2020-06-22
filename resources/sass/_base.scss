@@ -1,8 +1,7 @@
 html {
-    @apply font-gotham-rounded font-gotham-rounded-book font-normal text-base text-gray-900;
+    @apply font-gotham-rounded-book font-normal;
 }
 
 body {
-    background-color: #f1f1f1;
-    @apply antialiased overflow-x-hidden w-full h-full;
+    background-color: #f1f1f1f;
 }

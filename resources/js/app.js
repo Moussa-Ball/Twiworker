@@ -2,7 +2,7 @@ import './bootstrap';
 import Vue from 'vue';
 import store from './store';
 import router from './router';
-import './registerServiceWorker';
+//import './registerServiceWorker';
 import Twiworker from './plugins/Twiworker';
 
 Vue.config.productionTip = true;

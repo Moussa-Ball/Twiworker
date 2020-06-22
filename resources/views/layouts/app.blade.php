@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Twiworker') }}</title>
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}" defer></script>
+    
+    <!-- Styles -->
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="bg-body h-screen antialiased leading-none">
     <div id="app">
-        <navbar></navbar>
-        <main class="container mx-auto" style="margin-top: 60px; margin-bottom: 60px;">
+        <navbar :auth="{{ (Auth::check()) ? 'true' : 'false' }}" token="{{ csrf_token() }}"></navbar>
+        <main role="main">
             @yield('content')
         </main>
         <footerr></footerr>

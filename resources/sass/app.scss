@@ -1,41 +1,11 @@
-/*
-*----------------------------------------
-*        IMPORT TAILWIND CSS
-*----------------------------------------
-*/
-@import "tailwind";
+@tailwind base;
 
-/*
-*----------------------------------------
-*        IMPORT BOOTSTRAP GRID
-*----------------------------------------
-*/
-//@import "../../node_modules/bootstrap-4-grid/scss/grid.scss";
-
-/*
-*----------------------------------------
-*     VARIABLES & TYPOGRAPHY - BASE
-*----------------------------------------
-*/
-@import "variables";
-@import "font";
 @import "base";
+@import "font";
 
-/*
-*----------------------------------------
-*               LAYOUTS
-*----------------------------------------
-*/
+@tailwind components;
+
 @import "layouts/navbar";
-@import "layouts/footer";
-
-/*
-*----------------------------------------
-*               COMPONENTS
-*----------------------------------------
-*/
-@import "components/dropdown";
-@import "components/button";
-@import "components/table";
-@import "components/card";
 @import "components/form";
+
+@tailwind utilities;
