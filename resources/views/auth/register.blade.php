@@ -9,10 +9,16 @@
                     {{ __('Create an account') }}
                 </div>
 
+                @if (session('status'))
+                <div class="text-sm rounded text-green-700 border-green-600 px-6 py-4 mb-4" role="alert">
+                    {{ session('status') }}
+                </div>
+                @endif
+
                 <form class="w-full p-6" method="POST" action="{{ route('register') }}">
                     @csrf
 
-                    
+                    <select-account-type></select-account-type>
 
                     <div class="flex flex-wrap mb-6">
                         <input type="text" class="form-input w-full @error('first_name') border-red-500 @enderror text-sm rounded-none shadow-none" name="first_name" value="{{ old('first_name') }}" required placeholder="First name">
@@ -54,13 +60,23 @@
                         @enderror
                     </div>
 
+                    <div class="flex flex-wrap mb-6">
+                        <input type="password" class="form-input w-full text-sm rounded-none shadow-none" name="password_confirmation" required autocomplete="new-password" placeholder="Password confirmation">
+                    </div>
+
                     <div class="flex flex-wrap flex-row items-center justify-between mb-6">
                         <label class="inline-flex items-center text-sm text-gray-700" for="terms">
-                            <input type="checkbox" name="ter,s" id="terms" class="form-checkbox rounded-none p-2" {{ old('terms') ? 'checked' : '' }}>
+                            <input type="checkbox" name="terms_of_use_and_privacy_policy" id="terms" class="form-checkbox @error('terms_of_use_and_privacy_policy') border-red-500 @enderror rounded-none p-2" {{ old('terms_of_use_and_privacy_policy') ? 'checked' : '' }}>
                             <span class="ml-2">
                                 I agree the <a href="#" class="text-primary hover:underline">terms of use</a> & <a href="#" class="text-primary hover:underline">privacy policy</a>.
                             </span>
                         </label>
+
+                        @error('terms_of_use_and_privacy_policy')
+                            <p class="text-red-500 text-xs italic mt-4">
+                                {{ $message }}
+                            </p>
+                        @enderror
                     </div>
 
                     <div class="flex flex-wrap items-center">

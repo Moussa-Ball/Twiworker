@@ -1,53 +1,52 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mx-auto">
-        <div class="flex flex-wrap justify-center">
-            <div class="w-full max-w-sm">
+<div class="container mx-auto flex justify-center items-center">
+    <div class="flex flex-wrap justify-center">
+        <div class="md:w-400px lg:w-400px w-auto mx-3">
+            <div class="my-16 flex flex-col break-words bg-white border border-2 rounded-none shadow-dropdown">
+                <div class="font-semibold text-gray-700 py-3 px-6 mb-0 uppercase self-center mt-6">
+                    {{ __('Reset Password') }}
+                </div>
 
-                @if (session('status'))
-                    <div class="text-sm border border-t-8 rounded text-green-700 border-green-600 bg-green-100 px-3 py-4 mb-4" role="alert">
+                <form class="w-full p-6" method="POST" action="{{ route('password.email') }}">
+                    @csrf
+
+                    @if (session('status'))
+                    <div class="text-sm text-green-700 border-green-600 bg-green-100 px-6 py-4 mb-6" role="alert">
                         {{ session('status') }}
                     </div>
-                @endif
+                    @endif
 
-                <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
+                    <div class="flex flex-wrap mb-6">
+                        <input id="email" type="email" class="form-input w-full @error('email') border-red-500 @enderror text-sm rounded-none shadow-none" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Email address">
 
-                    <div class="font-semibold bg-gray-200 text-gray-700 py-3 px-6 mb-0">
-                        {{ __('Reset Password') }}
+                        @error('email')
+                            <p class="text-red-500 text-xs italic mt-4">
+                                {{ $message }}
+                            </p>
+                        @enderror
                     </div>
 
-                    <form class="w-full p-6" method="POST" action="{{ route('password.email') }}">
-                        @csrf
+                    <div class="flex flex-wrap items-center">
+                        <button type="submit" class="bg-primary hover:bg-opacity-95 shadow-sm text-gray-100 font-medium py-3 px-4 rounded-none text-sm focus:outline-none w-full uppercase">
+                            {{ __('Get password reset link') }}
+                        </button>
 
-                        <div class="flex flex-wrap mb-6">
-                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">
-                                {{ __('E-Mail Address') }}:
-                            </label>
+                        <div class="w-full border-b my-6"></div>
 
-                            <input id="email" type="email" class="form-input w-full @error('email') border-red-500 @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                            @error('email')
-                                <p class="text-red-500 text-xs italic mt-4">
-                                    {{ $message }}
-                                </p>
-                            @enderror
-                        </div>
-
-                        <div class="flex flex-wrap">
-                            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-gray-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                                {{ __('Send Password Reset Link') }}
-                            </button>
-
-                            <p class="w-full text-xs text-center text-gray-700 mt-8 -mb-4">
-                                <a class="text-blue-500 hover:text-blue-700 no-underline" href="{{ route('login') }}">
-                                    {{ __('Back to login') }}
+                        @if (Route::has('register'))
+                            <p class="w-full text-sm text-center text-gray-800">
+                                <a class="text-primary hover:text-opacity-75 no-underline" href="{{ route('login') }}">
+                                    {{ __('Go back to login page') }}
                                 </a>
                             </p>
-                        </div>
-                    </form>
-                </div>
+                        @endif
+                    </div>
+                </form>
+
             </div>
         </div>
     </div>
+</div>
 @endsection

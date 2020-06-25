@@ -21,7 +21,6 @@
         <main role="main">
             @yield('content')
         </main>
-        <footerr></footerr>
     </div>
 </body>
 </html>

@@ -1,6 +1,9 @@
 import VueAxios from 'vue-axios';
 window.axios = require('axios');
 
+// Import custom components
+import SelectAccountType from '../components/account/SelectAccountType'
+
 // Import layouts
 import Navbar from '../layouts/Navbar';
 import Footer from '../layouts/Footer';
@@ -16,5 +19,6 @@ export default {
     Vue.component('navbar', Navbar);
     Vue.component('footerr', Footer);
     Vue.component('job-feed', JobFeed);
+    Vue.component('select-account-type', SelectAccountType);
   },
 };
