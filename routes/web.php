@@ -12,6 +12,10 @@ Auth::routes(['verify' => true]);
 */
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/', 'HomeController@index')->name('home.index');
+
+    // Social authentification routes.
+    Route::get('authentification/{provider}', 'Auth\SocialiteController@redirectToProvider')->name('socialite.auth');
+    Route::get('authentification/{provider}/callback', 'Auth\SocialiteController@handleProviderCallback')->name('socialite.callback');
 });
 
 /*
