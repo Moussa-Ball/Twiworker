@@ -31,8 +31,8 @@ module.exports = {
         "facebook": "#3B5999",
       },
       textColor: {
-          "primary": "#293fdf",
-          "another": "#53D121",
+        "primary": "#293fdf",
+        "another": "#53D121",
       },
       borderColor: {
           "primary": "#293fdf",
@@ -52,7 +52,8 @@ module.exports = {
           'footer-link': "15px",
       },
       boxShadow: {
-          "dropdown": "0 0 6px rgba(50 ,50 , 50, .25)"
+          "dropdown": "0 0 6px rgba(50 ,50 , 50, .25)",
+          "btn-hover": "0 0 6px rgba(20 ,20 , 20, .45)"
       },
       transitionProperty: {
           'height': 'height'
@@ -73,6 +74,7 @@ module.exports = {
     borderStyle: ['responsive', "before", "after"],
     borderWidth: ['responsive', "before", "after"],
     inset: ['responsive', "before", "after"],
+    transitionProperty: ['responsive', 'hover', 'focus', "before", "after"],
   },
   plugins: [
     require('@tailwindcss/custom-forms'),

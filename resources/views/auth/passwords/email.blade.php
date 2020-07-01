@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="flex flex-wrap items-center">
-                        <button type="submit" class="bg-primary hover:bg-opacity-95 shadow-sm text-gray-100 font-medium py-3 px-4 rounded-none text-sm focus:outline-none w-full uppercase">
+                        <button type="submit" class="transitionn duration-300 shadow-dropdown hover:shadow-btn-hover bg-primary hover:bg-opacity-95 text-gray-100 font-medium py-3 px-4 rounded-none text-sm focus:outline-none w-full uppercase">
                             {{ __('Get password reset link') }}
                         </button>
 
