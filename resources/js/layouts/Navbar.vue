@@ -75,7 +75,7 @@
             <navicon type="message" :counter="95" />
             <navicon type="notification" :counter="70" :last="true"/>
           </div>
-          <AccountDropdown />
+          <AccountDropdown :token="token"/>
         </ul> 
       </slide-up-down>
 
@@ -122,7 +122,7 @@
             <navicon type="message" :counter="95" />
             <navicon type="notification" :counter="70" :last="true"/>
           </div>
-          <AccountDropdown class="tw-account-dropdown-box" />
+          <AccountDropdown class="tw-account-dropdown-box" :token="token" />
         </ul>
       </div>
     </div>
