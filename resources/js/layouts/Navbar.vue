@@ -53,10 +53,10 @@
       <slide-up-down v-if="auth" class="w-full lg:flex lg:items-center lg:w-auto lg:hidden" :active="open" :duration="300">
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto pt-4 lg:pt-0">
           <DropdownMenu name="Jobs" link="#">
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">News Feed</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">Search Job</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">My biddings</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">My Contracts</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">News Feed</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">Search Job</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My biddings</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My Contracts</a>
           </DropdownMenu>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
             <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Freelancers</a>
@@ -83,10 +83,10 @@
       <div v-if="auth" class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:pt-0" :class="open ? 'block': 'hidden'">
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto">
           <DropdownMenu name="Jobs" link="#">
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">News Feed</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">Search Job</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">My biddings</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-primary hover:text-white capitalize border-none" href="#">My Contracts</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">News Feed</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">Search Job</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My biddings</a>
+            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My Contracts</a>
           </DropdownMenu>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
             <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Freelancers</a>

@@ -8,7 +8,7 @@
     <!-- style="top: 42px; width: 400px;" class="absolute right-0 mt-4 py-2 bg-white rounded-none shadow-md hidden sm:block" -->
     <div :class="open ? 'lg:block' : 'lg:hidden'" class="w-full lg:w-300px lg:flex-1 lg:absolute lg:right-0 mt-2 -mb-2 lg:mt-4 lg:py-2 bg-white rounded-none lg:shadow-dropdown block tw-account-dropdown">
       <div class="block px-1 lg:px-4 py-2 hover:bg-gray-200 cursor-pointer lg:mx-2 rounded-none flex justify-start items-center transition ease-in-out duration-300">
-        <button class="relative z-10 block h-10 w-10 lg:h-12 lg:w-12 rounded-full overflow-hidden border-4 border-gray-300 focus:outline-none">
+        <button class="relative z-10 block h-10 w-10 rounded-full overflow-hidden border-4 border-gray-300 focus:outline-none">
           <img class="h-full w-full object-cover rounded-full" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar">
         </button>
         <div class="flex flex-col justify-start items-start pl-2">
