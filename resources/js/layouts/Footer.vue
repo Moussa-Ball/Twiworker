@@ -1,14 +1,10 @@
 <template>
-  <footer class="bg-footer relative flex flex-wrap items-center justify-between text-white w-full shadow-md pl-6 pr-6 pt-4 pb-4 font-light">
-    <div class="container flex flex-wrap items-center justify-between ml-auto mr-auto">
+  <footer class="bg-footer relative flex flex-wrap items-center justify-between text-white w-ful font-light">
+    <div class="container mx-auto px-4 lg:px-6 flex flex-wrap items-center justify-between">
       <!-- Logo & Dropdown Button For Language-->
-      <div class="section-logo-and-dropdown-language">
+      <div class="flex justify-between items-center w-full py-10">
         <div>
-          <svg
-            class="h-5"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 147.952 22.096"
-          >
+          <svg class="h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.952 22.096">
             <path
               fill="#ffffff"
               transform="translate(-3.078 21.094)"
@@ -25,63 +21,63 @@
       </div>
 
       <!-- Footer Line -->
-      <!--<div class="footer-line"></div>
+      <div class="w-full border-b opacity-25"></div>
 
       <!-- Footer Menu -->
-      <!--<div class="footer-menu">
-        <div class="footer-menu-item">
-          <h4>About</h4>
-          <ul class="footer-menu-item-list">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Terms of use</a></li>
+      <div class="flex flex-wrap items-center justify-between w-full">
+        <div class="w-1/2 lg:w-1/4">
+          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded text-link font-normal">About</h4>
+          <ul class="block">
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Blog</a></li>
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">About us</a></li>
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Terms of use</a></li>
           </ul>
         </div>
 
-        <div class="footer-menu-item">
-          <h4>Resources</h4>
-          <ul class="footer-menu-item-list">
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Help & Support</a></li>
+        <div class="w-1/2 lg:w-1/4">
+          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded text-link font-normal">Resources</h4>
+          <ul class="block">
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Community</a></li>
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Privacy Policy</a></li>
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Help & Support</a></li>
           </ul>
         </div>        
 
-        <div class="footer-menu-item">
-          <h4>Browser</h4>
-          <ul class="footer-menu-item-list">
-            <li><a href="#">Top Freelancers</a></li>
-            <li><a href="#">Freelancers in UK</a></li>
-            <li><a href="#">Freelancers in USA</a></li>
+        <div class="w-1/2 lg:w-1/4">
+          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded text-link font-normal">Browser</h4>
+          <ul class="block">
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Top Freelancers</a></li>
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Freelancers in UK</a></li>
+            <li class="list-none py-3"><a class="font-gotham-rounded-book text-sm font-normal hover:underline" href="#">Freelancers in USA</a></li>
           </ul>
         </div>
 
-        <div class="footer-menu-item">
-          <h4>Follow Us</h4>
-          <ul class="footer-menu-item-list">
-            <li>
-              <a href="#" class="flex justify-start items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24.036" height="24.017" viewBox="0 0 24.036 24.017">
-                  <g id="twitter" transform="translate(0 -0.2)">
-                    <g id="Groupe_25" data-name="Groupe 25" transform="translate(0 0.2)">
-                      <path id="Tracé_301" data-name="Tracé 301" d="M17.994.2H6.023A6.036,6.036,0,0,0,0,6.223V18.213a6.032,6.032,0,0,0,6.023,6H18.013a6.036,6.036,0,0,0,6.023-6.023V6.223A6.065,6.065,0,0,0,17.994.2Zm-.019,9v.4a8.615,8.615,0,0,1-8.749,8.616,8.775,8.775,0,0,1-4.708-1.353c.248.019.477.038.724.038a6.14,6.14,0,0,0,3.812-1.3,3.071,3.071,0,0,1-2.878-2.1,2.909,2.909,0,0,0,.572.057,2.839,2.839,0,0,0,.82-.114,3.046,3.046,0,0,1-2.421-2.974v-.038a2.948,2.948,0,0,0,1.372.381,2.989,2.989,0,0,1-.953-4.041A8.806,8.806,0,0,0,11.894,9.94a2.806,2.806,0,0,1-.076-.686,3.047,3.047,0,0,1,3.069-3.031,3.124,3.124,0,0,1,2.249.953,5.722,5.722,0,0,0,1.944-.743A3.1,3.1,0,0,1,17.727,8.11,6.09,6.09,0,0,0,19.5,7.634,6.259,6.259,0,0,1,17.975,9.2Z" transform="translate(0 -0.2)" fill="#fff"/>
+        <div class="w-1/2 lg:w-1/4">
+          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded text-link font-normal">Follow Us</h4>
+          <ul class="block">
+            <li class="list-none py-3">
+              <a href="#" class="flex justify-start items-center font-gotham-rounded-book text-sm font-normal hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24.036 24.017">
+                  <g transform="translate(0 -0.2)">
+                    <g data-name="Groupe 25" transform="translate(0 0.2)">
+                      <path data-name="Tracé 301" d="M17.994.2H6.023A6.036,6.036,0,0,0,0,6.223V18.213a6.032,6.032,0,0,0,6.023,6H18.013a6.036,6.036,0,0,0,6.023-6.023V6.223A6.065,6.065,0,0,0,17.994.2Zm-.019,9v.4a8.615,8.615,0,0,1-8.749,8.616,8.775,8.775,0,0,1-4.708-1.353c.248.019.477.038.724.038a6.14,6.14,0,0,0,3.812-1.3,3.071,3.071,0,0,1-2.878-2.1,2.909,2.909,0,0,0,.572.057,2.839,2.839,0,0,0,.82-.114,3.046,3.046,0,0,1-2.421-2.974v-.038a2.948,2.948,0,0,0,1.372.381,2.989,2.989,0,0,1-.953-4.041A8.806,8.806,0,0,0,11.894,9.94a2.806,2.806,0,0,1-.076-.686,3.047,3.047,0,0,1,3.069-3.031,3.124,3.124,0,0,1,2.249.953,5.722,5.722,0,0,0,1.944-.743A3.1,3.1,0,0,1,17.727,8.11,6.09,6.09,0,0,0,19.5,7.634,6.259,6.259,0,0,1,17.975,9.2Z" transform="translate(0 -0.2)" fill="#fff"/>
                     </g>
                   </g>
                 </svg>
                 <span class="pl-4">Twitter</span>
               </a>
             </li>
-            <li>
-              <a href="#" class="flex justify-start items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24.036" height="24.036" viewBox="0 0 24.036 24.036">
-                  <path id="linkedin" d="M20.515,0H3.521A3.525,3.525,0,0,0,0,3.521V20.515a3.525,3.525,0,0,0,3.521,3.521H20.515a3.525,3.525,0,0,0,3.521-3.521V3.521A3.525,3.525,0,0,0,20.515,0ZM8.5,19.06H5.68V9.2H8.5Zm0-11.267H5.68V4.976H8.5ZM18.356,19.06H15.539V13.426a1.408,1.408,0,0,0-2.817,0V19.06H9.906V9.2h2.817v.531A6.106,6.106,0,0,1,14.835,9.2a3.687,3.687,0,0,1,3.521,3.741Zm0,0" fill="#fff"/>
+            <li class="list-none py-3">
+              <a href="#" class="flex justify-start items-center font-gotham-rounded-book text-sm font-normal hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24.036 24.036">
+                  <path d="M20.515,0H3.521A3.525,3.525,0,0,0,0,3.521V20.515a3.525,3.525,0,0,0,3.521,3.521H20.515a3.525,3.525,0,0,0,3.521-3.521V3.521A3.525,3.525,0,0,0,20.515,0ZM8.5,19.06H5.68V9.2H8.5Zm0-11.267H5.68V4.976H8.5ZM18.356,19.06H15.539V13.426a1.408,1.408,0,0,0-2.817,0V19.06H9.906V9.2h2.817v.531A6.106,6.106,0,0,1,14.835,9.2a3.687,3.687,0,0,1,3.521,3.741Zm0,0" fill="#fff"/>
                 </svg>
                 <span class="pl-4">Linkedin</span>
               </a>
             </li>
-            <li>
-              <a href="#" class="flex justify-start items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24.15" height="24.15" viewBox="0 0 24.15 24.15">
+            <li class="list-none py-3">
+              <a href="#" class="flex justify-start items-center font-gotham-rounded-book text-sm font-normal hover:underline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24.15 24.15">
                   <path id="facebook" d="M20.613,0H3.538A3.542,3.542,0,0,0,0,3.538V20.613A3.542,3.542,0,0,0,3.538,24.15H10.66V15.613H7.83V11.368h2.83V8.49a4.25,4.25,0,0,1,4.245-4.245H19.2V8.49H14.905v2.877H19.2l-.708,4.245H14.905V24.15h5.707a3.542,3.542,0,0,0,3.538-3.538V3.538A3.542,3.542,0,0,0,20.613,0Zm0,0" fill="#fff"/>
                 </svg>
                 <span class="pl-4">Facebook</span>
@@ -89,15 +85,15 @@
             </li>
           </ul>
         </div>
-      </div>-->
+      </div>
 
       <!-- Footer Line -->
-      <!--<div class="footer-line second"></div>
+      <div class="opacity-25 border-b w-full pb-10"></div>
 
       <!-- Copyright Text -->
-      <!--<div class="copyright-section">
-        <span>© 2020 Twiworker.</span>
-      </div>-->
+      <div class="w-full flex justify-center text-center py-10">
+        <span class="text-sm text-white">© 2020 Twiworker.</span>
+      </div>
     </div>
   </footer>
 </template>
