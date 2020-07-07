@@ -1,5 +1,5 @@
 <template>
-  <li class="lg:z-10 font-gotham-rounded uppercase border-b lg:border-none border-gray-200 relative" @mouseover="open = true" @mouseleave="open = false">
+  <li class="lg:z-20 font-gotham-rounded uppercase border-b lg:border-none border-gray-200 relative" @mouseover="open = true" @mouseleave="open = false">
     <div class="flex justify-between items-center">
       <a 
         class="block lg:inline-block text-gray-600 text-link px-0 lg:px-4 py-4 dropdown-toggle" 
