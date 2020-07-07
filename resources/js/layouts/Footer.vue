@@ -24,7 +24,7 @@
       <div class="w-full border-b opacity-25"></div>
 
       <!-- Footer Menu -->
-      <div class="flex flex-wrap items-center justify-between w-full">
+      <div class="flex flex-wrap items-baseline justify-between w-full">
         <div class="w-1/2 lg:w-1/4 flex flex-col mx-auto">
           <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal">About</h4>
           <ul class="block flex flex-wrap flex-col justify-between w-full m-0 p-0">
@@ -64,7 +64,7 @@
                     </g>
                   </g>
                 </svg>
-                <span class="pl-4">Twitter</span>
+                <span class="pl-3">Twitter</span>
               </a>
             </li>
             <li class="list-none py-3">
@@ -72,7 +72,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4" viewBox="0 0 24.036 24.036">
                   <path d="M20.515,0H3.521A3.525,3.525,0,0,0,0,3.521V20.515a3.525,3.525,0,0,0,3.521,3.521H20.515a3.525,3.525,0,0,0,3.521-3.521V3.521A3.525,3.525,0,0,0,20.515,0ZM8.5,19.06H5.68V9.2H8.5Zm0-11.267H5.68V4.976H8.5ZM18.356,19.06H15.539V13.426a1.408,1.408,0,0,0-2.817,0V19.06H9.906V9.2h2.817v.531A6.106,6.106,0,0,1,14.835,9.2a3.687,3.687,0,0,1,3.521,3.741Zm0,0" fill="#fff"/>
                 </svg>
-                <span class="pl-4">Linkedin</span>
+                <span class="pl-3">Linkedin</span>
               </a>
             </li>
             <li class="list-none py-3">
@@ -80,7 +80,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4" viewBox="0 0 24.15 24.15">
                   <path id="facebook" d="M20.613,0H3.538A3.542,3.542,0,0,0,0,3.538V20.613A3.542,3.542,0,0,0,3.538,24.15H10.66V15.613H7.83V11.368h2.83V8.49a4.25,4.25,0,0,1,4.245-4.245H19.2V8.49H14.905v2.877H19.2l-.708,4.245H14.905V24.15h5.707a3.542,3.542,0,0,0,3.538-3.538V3.538A3.542,3.542,0,0,0,20.613,0Zm0,0" fill="#fff"/>
                 </svg>
-                <span class="pl-4">Facebook</span>
+                <span class="pl-3">Facebook</span>
               </a>
             </li>
           </ul>
