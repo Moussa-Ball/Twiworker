@@ -1,0 +1,34 @@
+.v--modal {
+    border-radius: 0;
+    box-shadow: 0 3px 9px rgba(27, 33, 58, 0.4);
+
+    label {
+        color: rgba(#000000, 0.65);
+    }
+}
+
+.card-custom {
+    border-radius: 0 !important;
+    .card-header-custom {
+        background-color: #f8f8f8 !important;
+        border-radius: 0 !important;
+    }
+    .card-body-custom {
+        background-color: #f8f8f8 !important;
+        border-radius: 0 !important;
+    }
+}
+
+.v--modal-overlay {
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.pop-out-enter-active,
+.pop-out-leave-active {
+    transition: all 0.3s;
+}
+.pop-out-enter,
+.pop-out-leave-active {
+    opacity: 0;
+    transform: translateY(24px);
+}

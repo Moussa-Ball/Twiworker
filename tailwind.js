@@ -1,13 +1,22 @@
+const { input } = require("@tailwindcss/custom-forms/src/defaultOptions");
+
 module.exports = {
     purge: ["./resources/views/**/*.blade.php", "./resources/css/**/*.css"],
     theme: {
         fontFamily: {
             "gotham-rounded": ["Gotham Rounded"],
-            "gotham-rounded-book": ["Gotham Rounded Book"]
+            "gotham-rounded-book": ["Gotham Rounded Book"],
+            "sans": ['Open Sans', 'sans-serif'],
         },
         extend: {
             minWidth: {
                 "10rem": "10rem"
+            },
+            width: {
+                "39px": "39px"
+            },
+            height: {
+                "39px": "39px"
             },
             spacing: {
                 "80": "20rem",
@@ -27,7 +36,9 @@ module.exports = {
                 primary: "#293fdf",
                 another: "#53D121",
                 message: "#E0E0E0",
-                facebook: "#3B5999"
+                facebook: "#3B5999",
+                header: "#eeeeee",
+                input: "#F9F9F9"
             },
             textColor: {
                 primary: "#293fdf",
