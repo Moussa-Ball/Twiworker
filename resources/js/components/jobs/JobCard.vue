@@ -371,7 +371,7 @@
                         <span class="ml-4 mt-1 flex items-center text-link text-gray-900 font-medium">19 April 2020</span>
                       </p>
                       <p class="mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5">
-                        <read-more class="read-more" link="javascript:void;" more-str="more" less-str="less" :max-chars="150" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur maxime repudiandae facilis repellendus fugit accusantium soluta dolorum officiis deleniti tempora sed nam harum, animi beatae aliquam? Consequuntur, dolor eum!"></read-more>  
+                        <read-more class="read-more" link="javascript:void;" more-str="more" less-str="less" :max-chars="130" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur maxime repudiandae facilis repellendus fugit accusantium soluta dolorum officiis deleniti tempora sed nam harum, animi beatae aliquam? Consequuntur, dolor eum!"></read-more>  
                       </p>
                     </div>
                     <div class="border-b mb-1"></div>
@@ -397,7 +397,7 @@
                         <span class="ml-4 mt-1 flex items-center text-link text-gray-900 font-medium">19 April 2020</span>
                       </p>
                       <p class="mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5">
-                        <read-more class="read-more" link="javascript:void;" more-str="more" less-str="less" :max-chars="150" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur maxime repudiandae facilis repellendus fugit accusantium soluta dolorum officiis deleniti tempora sed nam harum, animi beatae aliquam? Consequuntur, dolor eum!"></read-more>  
+                        <read-more class="read-more" link="javascript:void;" more-str="more" less-str="less" :max-chars="130" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur maxime repudiandae facilis repellendus fugit accusantium soluta dolorum officiis deleniti tempora sed nam harum, animi beatae aliquam? Consequuntur, dolor eum!"></read-more>  
                       </p>
                     </div>
                   </div>
@@ -461,9 +461,11 @@
 
                 <div class="flex flex-col mt-6">
                   <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Request Link</strong>
-                  <div class="w-full flex items-center mt-6">
+                  <div class="w-full flex mt-6">
                     <input class="flex-1 px-4 py-3 focus:outline-none text-sm text-gray-700 bg-input border border-message cursor-not-allowed opacity-75" type="url" value="http://localhost:3000/job/~5456465456" disabled>
-                    <button class="px-4 py-3 border border-primary text-sm text-white text-center bg-primary focus:outline-none flex justify-center items-center shadow-sm">O</button>
+                    <button content="Copy the link" v-tippy="{placement: 'bottom', arrow: true}" class="px-4 py-3 text-sm text-white text-center bg-primary focus:outline-none flex justify-center items-center shadow-sm">     
+                      <svg class="fill-current text-white h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
+                    </button>
                   </div>
                 </div>
 
@@ -471,8 +473,22 @@
 
                 <div class="flex flex-col mt-6">
                   <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Share</strong>
-                  <div class="flex items-center justify-between">
-
+                  <div class="flex items-center justify-between mt-6">
+                    <button content="Share on facebook" v-tippy="{placement: 'bottom', arrow: true}" class="bg-white text-gray-600 p-3 shadow-dropdown rounded-sm hover:shadow-btn-hover hover:opacity-75 focus:outline-none transition duration-300 ease-in-out">
+                      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 30.807">
+                        <path d="M38.309,17.329l.856-5.575h-5.35V8.136c0-1.525.747-3.012,3.143-3.012H39.39V.377A29.659,29.659,0,0,0,35.073,0c-4.406,0-7.285,2.67-7.285,7.5v4.249h-4.9v5.575h4.9V30.807h6.027V17.329Z" transform="translate(-22.89)" fill="#3b5999"/>
+                      </svg>
+                    </button>
+                    <button content="Share on twitter" v-tippy="{placement: 'bottom', arrow: true}" class="bg-white text-gray-600 p-3 shadow-dropdown rounded-sm hover:shadow-btn-hover hover:opacity-75 focus:outline-none transition duration-300 ease-in-out">
+                      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.245 22.128">
+                        <path d="M24.444,53.6c.017.242.017.484.017.726A15.778,15.778,0,0,1,8.574,70.21,15.779,15.779,0,0,1,0,67.7a11.552,11.552,0,0,0,1.348.069,11.183,11.183,0,0,0,6.932-2.386A5.594,5.594,0,0,1,3.06,61.514a7.042,7.042,0,0,0,1.055.086,5.906,5.906,0,0,0,1.469-.19,5.585,5.585,0,0,1-4.477-5.48v-.069a5.623,5.623,0,0,0,2.524.709A5.592,5.592,0,0,1,1.9,49.1a15.872,15.872,0,0,0,11.513,5.843,6.3,6.3,0,0,1-.138-1.279,5.589,5.589,0,0,1,9.664-3.82A10.993,10.993,0,0,0,26.484,48.5a5.569,5.569,0,0,1-2.455,3.077,11.194,11.194,0,0,0,3.215-.864A12,12,0,0,1,24.444,53.6Z" transform="translate(0 -48.082)" fill="#55acee"/>
+                      </svg>
+                    </button>
+                    <button content="Share on linkedin" v-tippy="{placement: 'bottom', arrow: true}" class="bg-white text-gray-600 p-3 shadow-dropdown rounded-sm hover:shadow-btn-hover hover:opacity-75 focus:outline-none transition duration-300 ease-in-out">
+                      <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.128 22.128">
+                        <path d="M4.953,22.138H.366V7.364H4.953ZM2.657,5.349A2.669,2.669,0,1,1,5.314,2.667,2.679,2.679,0,0,1,2.657,5.349ZM22.123,22.138H17.545V14.946c0-1.714-.035-3.912-2.385-3.912-2.385,0-2.751,1.862-2.751,3.788v7.315H7.827V7.364h4.4V9.379h.064a4.821,4.821,0,0,1,4.341-2.386c4.643,0,5.5,3.057,5.5,7.029v8.115Z" transform="translate(0 -0.01)" fill="#0077b5"/>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>

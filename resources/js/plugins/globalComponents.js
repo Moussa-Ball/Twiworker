@@ -6,6 +6,7 @@ import StarRating from 'vue-star-rating'
 import SlideUpDown from 'vue-slide-up-down'
 import ProgressBar from "vue-simple-progress";
 import VueCircle from 'vue2-circle-progress-new'
+import VueTippy, { TippyComponent } from "vue-tippy";
 import * as TastyBurgerButton from 'vue-tasty-burgers';
 
 // Import custom components
@@ -25,10 +26,12 @@ export default {
     // Register global using.
     Vue.use(vmodal);
     Vue.use(ReadMore);
+    Vue.use(VueTippy);
     Vue.use(TastyBurgerButton);
     Vue.use(VueAxios, window.axios);
 
     // Register components.
+    Vue.component("tippy", TippyComponent);
     Vue.component('vue-circle', VueCircle);
     Vue.component('progress-bar', ProgressBar);
     Vue.component('slide-up-down', SlideUpDown);
