@@ -23,6 +23,6 @@ Route::group(['middleware' => 'guest'], function () {
 * AUTH ROUTES
 *--------------------------------------------------------------------------
 */
-Route::group(['middleware' => ['auth', 'verified']], function () {
+Route::group(['middleware' => ['auth', 'verified', 'password.confirm']], function () {
     Route::get('/feed', 'JobController@index')->name('jobs.index');
 });
