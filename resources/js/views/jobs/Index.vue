@@ -175,7 +175,7 @@
       </div>
       
       <!-- COL-9 -->
-      <div class="w-full lg:w-9/12 lg:pl-4">
+      <div class="w-full lg:w-9/12 px-0 lg:pl-4">
         <button v-if="false" class="font-gotham-rounded text-sm font-medium text-gray-700 bg-white shadow-dropdown hover:shadow-btn-hover py-3 mb-4 w-full focus:outline-none transition duration-200 ease-in-out">
           New jobs have just been posted. Click to see them.
         </button>
