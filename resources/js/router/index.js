@@ -7,12 +7,12 @@ const routes = [
   {
     path: '/feed',
     name: 'job.feed',
-    component: () => import('../views/JobFeed'),
+    component: () => import('../views/jobs/Index'),
   },
   {
     path: '/job/~:id',
     name: 'job.show',
-    component: () => import('../components/jobs/PreviewJob'),
+    component: () => import('../views/jobs/Show'),
   },
 ];
 

@@ -25,4 +25,5 @@ Route::group(['middleware' => 'guest'], function () {
 */
 Route::group(['middleware' => ['auth', 'verified']], function () {
     Route::get('/feed', 'JobController@index')->name('jobs.index');
+    Route::get('/job/~{id}', 'JobController@show')->name('jobs.show');
 });

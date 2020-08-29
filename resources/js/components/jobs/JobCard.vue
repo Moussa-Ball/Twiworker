@@ -165,12 +165,12 @@
 
     <modal :name="`job.show-${$vnode.key}`" classes="lg:py-10" :adaptive="true" height="auto" width="100%" :maxWidth="1024" transition="pop-out" @closed="closed" :scrollable="true">
       <div class="card card-custom shadow-btn-hover">
-        <h5 class="card-header card-header-custom flex items-center justify-between font-gotham-rounded-book text-gray-900 text-xl font-medium py-6 bg-white">
+        <h5 class="card-header card-header-custom flex items-center justify-between font-gotham-rounded-book text-gray-900 text-lg font-medium py-6 bg-white">
           {{ job.title }}
-          <a @click.prevent="closeModal(`job.show-${$vnode.key}`, true)" style="color: #7619df; cursor: pointer;">
+          <a @click.prevent="closeModal(`job.show-${$vnode.key}`, true)" class="pr-2" style="color: #7619df; cursor: pointer;">
             <img
-              width="15"
-              height="15" 
+              width="16"
+              height="16" 
               src="/img/cross-out.svg" 
               alt="cross"
             >
@@ -178,12 +178,18 @@
         </h5>
         <div class="card-body bg-header">
           <div class="px-10 relative top-auto left-auto mx-auto bg-header border-b" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125);">
-            <div class="flex flex-wrap items-center justify-between container px-4 py-16 lg:px-6">
-              <div>
-                <h2 class="pb-10 font-gotham-rounded text-gray-700 text-xl font-medium">{{ job.title }}</h2>
-                <span class="block font-gotham-rounded text-gray-800 text-sm font- -mb-2">About the client</span>
+            <div class="flex flex-wrap justify-between container mx-auto px-4 py-16 lg:px-6">
+              <div class="w-full lg:w-9/12">
+                <!-- Job title -->
+                <h2 class="font-gotham-rounded-book text-gray-800 text-xl lg:text-lg font-semibold">{{ job.title }}</h2>
+                
+                <!-- Separator -->
+                <div class="border-b border-gray-400 my-6 lg:hidden"></div>
+                
+                <!-- About the client -->
+                <h5 class="font-gotham-rounded text-gray-800 text-sm font-normal mt-10">About the client</h5>
                 <div class="flex flex-wrap items-baseline">
-                  <div class="flex items-center mr-4">
+                  <div class="flex items-center mr-4 mt-4 lg:mt-0">
                     <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">Reviews:</h4>
                     <p class="relative flex items-center font-light text-sm" style="bottom: 1.5px;">
                       <star-rating 
@@ -200,21 +206,21 @@
                     </p>
                   </div>
                   
-                  <div class="flex items-baseline mr-4">
+                  <div class="flex items-baseline mr-4 mt-4 lg:mt-0">
                     <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">Location:</h4>
                     <p class="font-light text-sm">{{ job.city }}, {{ job.country }}</p>
                   </div>
                   
-                  <div class="flex items-baseline mr-4 relative" style="top: 4px;">
+                  <div class="flex items-baseline mr-4 mt-4 lg:mt-0 relative" style="top: 4px;">
                     <!-- Job - Payment Verified -->
-                    <div v-if="job.payment_verified" class="flex items-center mr-2 pt-4 lg:pt-3 lg:my-0">
+                    <div v-if="job.payment_verified" class="flex items-center mr-2 lg:pt-3 lg:my-0">
                       <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.18 16.176">
                         <path d="M93.724,89.2a4.825,4.825,0,1,0,4.825,4.825A4.831,4.831,0,0,0,93.724,89.2Zm2.42,3.669-2.912,2.747a.283.283,0,0,1-.2.081.286.286,0,0,1-.209-.088L91.3,94.043a.294.294,0,0,1,.419-.411l1.322,1.359,2.7-2.548a.294.294,0,0,1,.4.426Zm0,0" transform="translate(-85.634 -85.935)" fill="#5c74ff"/>
                         <path d="M15.019,10.149l1.16-1.759-1.16-1.759a.3.3,0,0,1-.048-.176l.117-2.108L13.212,3.4a.29.29,0,0,1-.129-.129l-.947-1.877-2.108.117a.3.3,0,0,1-.176-.048L8.09.3,6.331,1.461a.3.3,0,0,1-.176.048L4.047,1.391,3.1,3.268a.29.29,0,0,1-.129.129l-1.877.947.117,2.108a.3.3,0,0,1-.048.176L0,8.391,1.16,10.15a.3.3,0,0,1,.048.176l-.117,2.108,1.877.947a.29.29,0,0,1,.129.129l.947,1.877,2.108-.118h.015a.31.31,0,0,1,.162.048l1.759,1.16,1.759-1.16a.3.3,0,0,1,.176-.048l2.108.118.947-1.877a.29.29,0,0,1,.129-.129l1.876-.947-.117-2.108a.369.369,0,0,1,.055-.176ZM8.09,13.8A5.413,5.413,0,1,1,13.5,8.391,5.418,5.418,0,0,1,8.09,13.8Zm0,0" transform="translate(0 -0.301)" fill="#5c74ff"/>
                       </svg>
                       <span class="text-sm px-2">Payment Verified</span>
                     </div>
-                    <div v-else class="flex items-center mr-2 pt-4 lg:pt-3 lg:my-0">
+                    <div v-else class="flex items-center mr-2">
                       <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.18 16.176">
                         <path d="M93.724,89.2a4.825,4.825,0,1,0,4.825,4.825A4.831,4.831,0,0,0,93.724,89.2Zm2.42,3.669-2.912,2.747a.283.283,0,0,1-.2.081.286.286,0,0,1-.209-.088L91.3,94.043a.294.294,0,0,1,.419-.411l1.322,1.359,2.7-2.548a.294.294,0,0,1,.4.426Zm0,0" transform="translate(-85.634 -85.935)" fill="#b1b1b1"/>
                         <path d="M15.019,10.149l1.16-1.759-1.16-1.759a.3.3,0,0,1-.048-.176l.117-2.108L13.212,3.4a.29.29,0,0,1-.129-.129l-.947-1.877-2.108.117a.3.3,0,0,1-.176-.048L8.09.3,6.331,1.461a.3.3,0,0,1-.176.048L4.047,1.391,3.1,3.268a.29.29,0,0,1-.129.129l-1.877.947.117,2.108a.3.3,0,0,1-.048.176L0,8.391,1.16,10.15a.3.3,0,0,1,.048.176l-.117,2.108,1.877.947a.29.29,0,0,1,.129.129l.947,1.877,2.108-.118h.015a.31.31,0,0,1,.162.048l1.759,1.16,1.759-1.16a.3.3,0,0,1,.176-.048l2.108.118.947-1.877a.29.29,0,0,1,.129-.129l1.876-.947-.117-2.108a.369.369,0,0,1,.055-.176ZM8.09,13.8A5.413,5.413,0,1,1,13.5,8.391,5.418,5.418,0,0,1,8.09,13.8Zm0,0" transform="translate(0 -0.301)" fill="#b1b1b1"/>
@@ -224,15 +230,20 @@
                   </div>
                 </div>
               </div>
-              <div class="flex flex-col justify-center items-center bg-white shadow-btn-hover h-32 w-48">
-                <span class="pb-4 text-sm text-gray-700">Hourly Rate</span>
-                <strong class="text-base text-gray-700 font-gotham-rounded font-medium">$40,00</strong>
+
+              <!-- Separator -->
+              <div class="border-b border-gray-400 my-6 lg:hidden"></div>
+
+              <!-- Project Budget -->
+              <div class="flex flex-col justify-start items-start lg:justify-center lg:items-center w-12/12 lg:w-3/12 lg:bg-white lg:shadow-btn-hover h-32 w-48 mt-10 lg:mt-0 pt-4 lg:pt-0">
+               <h5 class="font-gotham-rounded-book text-gray-800 text-base font-light mb-4">Hourly Rate</h5>
+                <strong class="text-lg text-gray-800 font-gotham-rounded-book font-medium">$2,500 - $3,500</strong>
               </div>
             </div>
           </div>
           <div class="px-10 relative top-auto left-auto mx-auto bg-header border-b">
-            <div class="flex flex-wrap items-start justify-between container px-4 py-16 lg:px-6">
-              <div class="md:w-12/12 lg:w-8/12">
+            <div class="flex flex-wrap items-start justify-between container mx-auto px-4 py-16 lg:px-6">
+              <div class="w-12/12 lg:w-8/12">
                 <div class="card card-custom w-auto shadow-dropdown">
                   <h5 class="card-header card-header-custom font-gotham-rounded text-gray-700 text-sm font-medium py-6 border-b border-gray-200">
                     Details
@@ -403,9 +414,9 @@
                   </div>
                 </div>
               </div>
-              <div class="md:w-12/12 lg:w-4/12 md:6 lg:pl-6">
+              <div class="w-12/12 lg:w-4/12 md:6 lg:pl-6">
                 <div class="w-full flex flex-col">
-                  <button class="w-full bg-primary text-white text-center text-sm p-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">Apply Now</button>
+                  <button class="w-full bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">Apply Now</button>
                   <button class="flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">
                     <span class="ml-4 bg-gray-200 flex items-center justify-center h-8 w-8 rounded-full focus:outline-none">
                       <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -536,7 +547,7 @@ export default {
     display: inline;
   }
   a {
-    @apply text-primary text-sm font-medium;
+    @apply text-primary;
     &:hover {
       @apply underline;
     }

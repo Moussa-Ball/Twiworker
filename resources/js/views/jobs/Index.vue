@@ -208,7 +208,7 @@
 </template>
 
 <script>
-import JobCard from '../components/jobs/JobCard'
+import JobCard from '../../components/jobs/JobCard'
 export default {
   components: {
     JobCard
