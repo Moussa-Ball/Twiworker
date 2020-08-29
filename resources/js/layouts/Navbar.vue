@@ -1,5 +1,5 @@
 <template>
-  <nav class="relative flex flex-wrap items-center justify-between w-full bg-white shadow-md lg:px-6 py-4">
+  <nav class="relative flex flex-wrap items-center justify-between w-full bg-white shadow-md lg:px-6 py-4 lg:py-2">
     <div class="container mx-auto px-4 lg:px-6 flex flex-wrap items-center justify-between">
       <!-- Logo link -->
       <a

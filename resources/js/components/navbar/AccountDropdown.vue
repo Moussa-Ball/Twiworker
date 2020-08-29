@@ -1,5 +1,5 @@
 <template>
-  <div v-click-outside="hideAvatarDropdown" class="lg:z-20 mt-1 relative md-min:flex md-min:items-center md-min:justify-start w-full rounded-full">
+  <div v-click-outside="hideAvatarDropdown" class="lg:z-20 mt-1 relative pb-2 h-auto w-full rounded-full">
     <div @click="open = !open" class="hidden dropdown-avatar cursor-pointer select-none relative z-10 lg:block h-10 w-10 rounded-full overflow-hidden border-4 border-gray-300 focus:outline-none">
       <img class="select-none h-full w-full object-cover rounded-full" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar">
     </div>
@@ -11,8 +11,8 @@
         <button class="relative z-10 block h-10 w-10 rounded-full overflow-hidden border-4 border-gray-300 focus:outline-none">
           <img class="h-full w-full object-cover rounded-full" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar">
         </button>
-        <div class="flex flex-col justify-start items-start pl-2">
-          <span class="select-none antialiased font-gotham-rounded text-link text-gray-600 font-normal" style="font-size: 14px;">Melinda Gates</span>
+        <div class="flex flex-col justify-start items-start pl-2 leading-4">
+          <span class="select-none antialiased font-gotham-rounded text-link text-gray-700 font-normal" style="font-size: 14px;">Melinda Gates</span>
           <span class="select-none text-gray-500 text-sm">Graphic Designer</span>
         </div>
       </div>
