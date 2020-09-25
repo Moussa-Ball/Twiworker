@@ -130,7 +130,7 @@
             <h5 class="card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200">
               Freelancers Bidding (2)
             </h5>
-            <div class="card-body container px-4 lg:px-5">
+            <div class="card-body container px-4 lg:px-5 overflow-y-auto max-h-freelancers-bidding">
               <div class="flex flex-col py-4">
                 <!-- Bidding Item -->
                 <div class="flex flex-wrap items-center justify-between">
@@ -158,6 +158,7 @@
                 </div>
                 <!-- End Bidding Item -->
                 
+                <!-- Separator -->
                 <div class="border-b my-4"></div>
                 
                  <!-- Bidding Item -->
@@ -193,7 +194,7 @@
             <h5 class="card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200">
               Feedbacks (2)
             </h5>
-            <div class="card-body container px-4 lg:px-5">
+            <div class="card-body container px-4 lg:px-5 overflow-y-auto max-h-feedbacks">
               <!-- Feedback Item -->
               <div class="flex flex-col py-4">
                 <div class="flex flex-wrap items-baseline justify-between">

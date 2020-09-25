@@ -6,11 +6,16 @@ module.exports = {
         fontFamily: {
             "gotham-rounded": ["Gotham Rounded"],
             "gotham-rounded-book": ["Gotham Rounded Book"],
-            "sans": ['Open Sans', 'sans-serif'],
+            sans: ["Open Sans", "sans-serif"]
         },
         extend: {
             minWidth: {
                 "10rem": "10rem"
+            },
+            maxHeight: {
+                "freelancers-bidding": "294px",
+                "feedbacks": "414px"
+
             },
             width: {
                 "39px": "39px"

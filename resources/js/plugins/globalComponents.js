@@ -19,8 +19,9 @@ import Navbar from '../layouts/Navbar';
 import Footer from '../layouts/Footer';
 
 // Import Page
-import JobIndex from '../views/jobs/Index';
 import JobShow from '../views/jobs/Show';
+import JobIndex from '../views/jobs/Index';
+import WithdrawMethod from '../views/settings/WithdrawMethod';
 
 export default {
   install(Vue) {
@@ -40,10 +41,13 @@ export default {
     // Register custom components.
     Vue.component('navbar', Navbar);
     Vue.component('footerr', Footer);
-    Vue.component('job-show', JobShow);
-    Vue.component('job-index', JobIndex);
     Vue.component('pagination', Pagination);
     Vue.component('star-rating', StarRating);
     Vue.component('select-account-type', SelectAccountType);
+
+    // Register pages
+    Vue.component('job-show', JobShow);
+    Vue.component('job-index', JobIndex);
+    Vue.component('withdraw-method', WithdrawMethod);
   },
 };
