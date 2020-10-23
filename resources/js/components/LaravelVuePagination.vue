@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <renderless-laravel-vue-pagination
     :data="data"

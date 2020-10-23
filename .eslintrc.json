@@ -6,6 +6,11 @@
     },
     "extends": ["eslint:recommended", "plugin:vue/recommended"],
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "parser": "babel-eslint"
+    },
+    "globals": {
+        "$": true,
+        "route": true
     }
 }

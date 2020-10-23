@@ -6,12 +6,12 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/feed',
-    name: 'job.feed',
+    name: 'jobs.index',
     component: () => import('../views/jobs/Index'),
   },
   {
-    path: '/job/~:id',
-    name: 'job.show',
+    path: '/jobs/~:id',
+    name: 'jobs.show',
     component: () => import('../views/jobs/Show'),
   },
 ];

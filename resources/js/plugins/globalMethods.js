@@ -15,14 +15,31 @@ const showModal = function (name) {
  * Allows to close a modal.
  * @param {*} name The modal name.
  */
-const closeModal = function (name, goBack = false) {
+const closeModal = function (name) {
   document.querySelector("body").classList.remove("overflow-hidden");
   this.$modal.hide(name);
 };
 
+/**
+ * Check if an array contains object.
+ * @param {*} obj 
+ * @param {*} list 
+ */
+const contains = function (obj, list) {
+    var i;
+    for (i = 0; i < list.length; i++) {
+        if (list[i] === obj) {
+            return obj;
+        }
+    }
+
+    return {};
+}
+
 
 const GlobalMethods = {
   install(Vue) {
+    Vue.prototype.contains = contains;
     Vue.prototype.showModal = showModal;
     Vue.prototype.closeModal = closeModal;
   },

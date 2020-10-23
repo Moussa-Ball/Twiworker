@@ -88,8 +88,7 @@ class SocialiteController extends Controller
             return $authUser;
         }
 
-        switch ($provider) 
-        {
+        switch ($provider) {
             case 'google':
                 $new_user = User::create([
                     'first_name' => $user['given_name'],

@@ -1,0 +1,21 @@
+.rotate-chevron {
+    transform: rotate(90deg);
+    transition: transform .3s;
+}
+
+.unrotate-chevron {
+    transform: rotate(0deg);
+    transition: transform .3s;
+}
+
+.tw-dropdown-menu {
+    &:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 30px;
+        border: 6px solid #fff;
+        transform: translateX(-40%) rotate(135deg);
+        box-shadow: -2px 2px 2px rgba(50, 50, 50, .10);
+    }
+}

@@ -1,0 +1,36 @@
+@import "~vue-multiselect/dist/vue-multiselect.min.css";
+
+.multiselect__tags {
+    border-radius: 0 !important;
+    @apply flex items-center justify-between border border-gray-300;
+
+    .multiselect__input {
+        box-shadow: none !important;
+    }
+
+    .multiselect__tag {
+        @apply bg-primary;
+    }
+
+    .multiselect__tag-icon {
+        &:hover {
+            background: transparent !important;
+        }
+        &:after {
+            color: white !important;
+        }
+    }
+}
+
+.multiselect__content-wrapper {
+    border-radius: 0 !important;
+    @apply shadow-sm;
+}
+
+.multiselect__element {
+    @apply text-sm;
+}
+
+.multiselect__option--highlight {
+    background-color: #293FDF !important;
+}

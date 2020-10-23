@@ -17,7 +17,8 @@
         "laravel/socialite": "^4.4",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
-        "squizlabs/php_codesniffer": "^3.5"
+        "squizlabs/php_codesniffer": "^3.5",
+        "tightenco/ziggy": "^0.9.4"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.3",

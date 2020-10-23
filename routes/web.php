@@ -2,10 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Authentification routes.
+/**
+ * -----------------------------
+ * AUTHENTIFICATION ROUTES
+ * -----------------------------
+ */
 Auth::routes(['verify' => true]);
 
-/*
+/**
 *--------------------------------------------------------------------------
 * GUEST ROUTES
 *--------------------------------------------------------------------------
@@ -13,22 +17,44 @@ Auth::routes(['verify' => true]);
 Route::group(['middleware' => 'guest'], function () {
     Route::get('/', 'HomeController@index')->name('home.index');
 
-    // Social authentification routes.
+    /**
+     * ---------------------------------------------------------------
+     * SOCIAL AUTHENTIFICATION ROUTE
+     * ---------------------------------------------------------------
+     */
     Route::get('authentification/{provider}', 'Auth\SocialiteController@redirectToProvider')->name('socialite.auth');
     Route::get('authentification/{provider}/callback', 'Auth\SocialiteController@handleProviderCallback')->name('socialite.callback');
 });
 
-/*
+/**
 *--------------------------------------------------------------------------
 * AUTH ROUTES
 *--------------------------------------------------------------------------
 */
 Route::group(['middleware' => ['auth', 'verified']], function () {
+    
+    /**
+     * ---------------------------------------------------------------
+     * JOBS ROUTE
+     * ---------------------------------------------------------------
+     */
     Route::get('/feed', 'JobController@index')->name('jobs.index');
-    Route::get('/job/~{id}', 'JobController@show')->name('jobs.show');
+    Route::get('/jobs/~{id}', 'JobController@show')->name('jobs.show');
 
-    /* Settings Group Routes */
+    /**
+     * ---------------------------------------------------------------
+     * FREELANCERS ROUTE
+     * ---------------------------------------------------------------
+     */
+    Route::get('/profiles/filters', 'FreelancerController@index')->name('freelancers.index');
+
+
+    /**
+     * ---------------------------------------------------------------
+     * SETTINGS ROUTES
+     * ---------------------------------------------------------------
+     */
     Route::group(['prefix' => 'settings'], function () {
-        Route::get('/withdraw-methods', 'WithdrawMethodsController@index')->name('jobs.index');
+        Route::get('/withdraw-methods', 'WithdrawMethodsController@index')->name('settings.withdraw.index');
     });
 });

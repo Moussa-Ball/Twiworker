@@ -25,104 +25,214 @@
       <!-- Hamburger button to open responsive menu -->
       <div class="md:block lg:hidden bg-white focus:outline-none">
         <tasty-burger-button
-          v-on:toggle="open = !open"
           type="slider"
           :rounded="false"
           size="s"
           color="#4a5568"
-          activeColor="#4a5568"
+          active-color="#4a5568"
+          @toggle="open = !open"
         />
       </div>
 
       <!-- For responsive menu when the user is not authenticated. -->
-      <slide-up-down v-if="!auth" class="w-full lg:flex lg:items-center lg:w-auto lg:hidden" :active="open" :duration="300">
+      <slide-up-down
+        v-if="!auth"
+        class="w-full lg:flex lg:items-center lg:w-auto lg:hidden"
+        :active="open"
+        :duration="300"
+      >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto pt-4 lg:pt-0">
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" :class="{'text-primary': loginRouteActive}" :href="loginRoute">Sign in</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              :class="{'text-primary': loginRouteActive}"
+              :href="loginRoute"
+            >Sign in</a>
           </li>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" :class="{'text-primary': registerRouteActive}" :href="registerRoute">Sign up</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              :class="{'text-primary': registerRouteActive}"
+              :href="registerRoute"
+            >Sign up</a>
           </li>
           <li class="font-gotham-rounded uppercase lg:normal-case">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal" href="#">Post a Job</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal"
+              href="#"
+            >Post a Job</a>
           </li>
         </ul>
       </slide-up-down>
 
       <!-- For responsive menu when the user is authenticated. -->
-      <slide-up-down v-if="auth" class="w-full lg:flex lg:items-center lg:w-auto lg:hidden" :active="open" :duration="300">
+      <slide-up-down
+        v-if="auth"
+        class="w-full lg:flex lg:items-center lg:w-auto lg:hidden"
+        :active="open"
+        :duration="300"
+      >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto pt-4 lg:pt-0">
-          <DropdownMenu name="Jobs" link="#">
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">News Feed</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">Search Job</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My biddings</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My Contracts</a>
+          <DropdownMenu
+            name="Jobs"
+            link="#"
+          >
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              href="#"
+            >News Feed</a>
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              href="#"
+            >Search Job</a>
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              href="#"
+            >My biddings</a>
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              href="#"
+            >My Contracts</a>
           </DropdownMenu>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Freelancers</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              href="#"
+            >Freelancers</a>
           </li>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Profile</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              href="#"
+            >Profile</a>
           </li>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Reports</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              href="#"
+            >Reports</a>
           </li>
         </ul>
 
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto pt-4 lg:pt-0">
           <div class="flex justify-between items-center border-b lg:border-none border-gray-200 pr-2">
             <SearchComponent />
-            <navicon type="message" :counter="95" />
-            <navicon type="notification" :counter="70" :last="true"/>
+            <navicon
+              type="message"
+              :counter="95"
+            />
+            <navicon
+              type="notification"
+              :counter="70"
+              :last="true"
+            />
           </div>
-          <AccountDropdown :token="token"/>
+          <AccountDropdown :token="token" />
         </ul> 
       </slide-up-down>
 
       <!-- Menu when the user is on large screen and he is authenticated. -->
-      <div v-if="auth" class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:pt-0" :class="open ? 'block': 'hidden'">
+      <div
+        v-if="auth"
+        class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:pt-0"
+        :class="open ? 'block': 'hidden'"
+      >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto">
-          <DropdownMenu name="Jobs" link="#">
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">News Feed</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">Search Job</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My biddings</a>
-            <a class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none" href="#">My Contracts</a>
+          <DropdownMenu
+            name="Jobs"
+            link="#"
+          >
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              :href="route('jobs.index')"
+            >
+              News Feed
+            </a>
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              href="#"
+            >Search Job</a>
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              href="#"
+            >My biddings</a>
+            <a
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              href="#"
+            >My Contracts</a>
           </DropdownMenu>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Freelancers</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              :href="route('freelancers.index')"
+            >Freelancers</a>
           </li>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Profile</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              href="#"
+            >Profile</a>
           </li>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" href="#">Reports</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              href="#"
+            >Reports</a>
           </li>
         </ul>
       </div>
 
       <!-- Menu when the user is on large screen and he isn't authenticated. -->
-      <div v-if="!auth" class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:pt-0">
+      <div
+        v-if="!auth"
+        class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:pt-0"
+      >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto">
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" :class="{'text-primary': loginRouteActive}" :href="loginRoute">Sign in</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              :class="{'text-primary': loginRouteActive}"
+              :href="loginRoute"
+            >Sign in</a>
           </li>
           <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4" :class="{'text-primary': registerRouteActive}" :href="registerRoute">Sign up</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              :class="{'text-primary': registerRouteActive}"
+              :href="registerRoute"
+            >Sign up</a>
           </li>
           <li class="font-gotham-rounded uppercase lg:normal-case">
-            <a class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 lg:hover:shadow-btn-hover trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal" href="#">Post a Job</a>
+            <a
+              class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 lg:hover:shadow-btn-hover trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal"
+              href="#"
+            >Post a Job</a>
           </li>
         </ul>
       </div>
 
-      <div v-if="auth" class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:py-0" :class="open ? 'block': 'hidden'">
+      <div
+        v-if="auth"
+        class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:py-0"
+        :class="open ? 'block': 'hidden'"
+      >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto pb-4 lg:py-0">
           <div class="flex justify-between items-center border-b lg:border-none border-gray-200">
-            <SearchComponent/>
-            <navicon type="message" :counter="95" />
-            <navicon type="notification" :counter="70" :last="true"/>
+            <SearchComponent />
+            <navicon
+              type="message"
+              :counter="95"
+            />
+            <navicon
+              type="notification"
+              :counter="70"
+              :last="true"
+            />
           </div>
-          <AccountDropdown class="tw-account-dropdown-box" :token="token" />
+          <AccountDropdown
+            class="tw-account-dropdown-box"
+            :token="token"
+          />
         </ul>
       </div>
     </div>
