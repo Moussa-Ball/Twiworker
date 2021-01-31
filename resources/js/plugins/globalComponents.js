@@ -12,6 +12,7 @@ import VueTippy, { TippyComponent } from "vue-tippy";
 import * as TastyBurgerButton from 'vue-tasty-burgers';
 import {Vue2Storage} from 'vue2-storage'
 import VueTagsInput from '@johmun/vue-tags-input';
+import vueCountryRegionSelect from 'vue-country-region-select';
 
 // Import custom components
 import CardFilter from '../components/CardFilter'
@@ -21,6 +22,10 @@ import Pagination from '../components/LaravelVuePagination'
 import CardInputSearch from '../components/CardInputSearch'
 import FreelancerCard from '../components/freelancers/FreelancerCard'
 import SelectAccountType from '../components/account/SelectAccountType'
+
+// KIT UI
+import KitUI from '../components/UI/KitUI.vue'
+import * as components from "../components/UI";
 
 // Import layouts
 import Navbar from '../layouts/Navbar';
@@ -52,7 +57,14 @@ export default {
       },
     });
 
+    //KIT UI
+    Vue.component('kit-ui', KitUI);
+    Object.entries(components).forEach(([name, component]) => {
+      Vue.component(name, component);
+    });
+
     // Register components.
+    Vue.use(vueCountryRegionSelect);
     Vue.component("tippy", TippyComponent);
     Vue.component('vue-circle', VueCircle);
     Vue.component("multiselect", Multiselect);
@@ -71,6 +83,7 @@ export default {
     Vue.component('expander-filter', ExpanderFilter);
     Vue.component('card-input-search', CardInputSearch);
     Vue.component('select-account-type', SelectAccountType);
+    Vue.component('kit-ui', KitUI);
 
     // Register pages
     Vue.component('job-show', JobShow);

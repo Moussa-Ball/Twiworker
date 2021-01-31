@@ -6,7 +6,7 @@
       class="flex justify-between items-center cursor-pointer pr-1"
       @click="open = !open"
     >
-      <h5 class="font-gotham-rounded text-gray-900 text-sm font-normal">
+      <h5 class="text-gray-900 text-sm font-normal">
         {{ name }}
       </h5>
       <div

@@ -2,11 +2,16 @@ const { input } = require("@tailwindcss/custom-forms/src/defaultOptions");
 
 module.exports = {
     purge: ["./resources/views/**/*.blade.php", "./resources/css/**/*.css"],
+    darkMode: 'class',
     theme: {
+        container: {
+            center: true
+        },
         fontFamily: {
             "gotham-rounded": ["Gotham Rounded"],
             "gotham-rounded-book": ["Gotham Rounded Book"],
-            sans: ["Open Sans", "sans-serif"]
+            sans: ["Open Sans", "sans-serif"],
+            nunito: ['Nunito', 'sans-serif']
         },
         extend: {
             minWidth: {

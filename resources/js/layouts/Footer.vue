@@ -30,25 +30,25 @@
       <!-- Footer Menu -->
       <div class="flex flex-wrap items-baseline justify-between w-full">
         <div class="w-1/2 lg:w-1/4 flex flex-col mx-auto">
-          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal">
+          <h4 class="pt-10 pb-10 text-base uppercase font-semibold">
             About
           </h4>
-          <ul class="block flex flex-wrap flex-col justify-between w-full m-0 p-0">
+          <ul class="flex flex-wrap flex-col justify-between w-full m-0 p-0">
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Blog</a>
             </li>
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >About us</a>
             </li>
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Terms of use</a>
             </li>
@@ -56,25 +56,25 @@
         </div>
 
         <div class="w-1/2 lg:w-1/4 flex flex-col mx-auto">
-          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal">
+          <h4 class="pt-10 pb-10 text-base uppercase font-semibold">
             Resources
           </h4>
-          <ul class="block flex flex-wrap flex-col justify-between w-full m-0 p-0">
+          <ul class="flex flex-wrap flex-col justify-between w-full m-0 p-0">
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Community</a>
             </li>
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Privacy Policy</a>
             </li>
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Help & Support</a>
             </li>
@@ -82,25 +82,25 @@
         </div>        
 
         <div class="w-1/2 lg:w-1/4 flex flex-col mx-auto">
-          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal">
+          <h4 class="pt-10 pb-10 text-base uppercase font-semibold">
             Browser
           </h4>
-          <ul class="block flex flex-wrap flex-col justify-between w-full m-0 p-0">
+          <ul class="flex flex-wrap flex-col justify-between w-full m-0 p-0">
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Top Freelancers</a>
             </li>
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Freelancers in UK</a>
             </li>
             <li class="list-none py-3">
               <a
-                class="font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="font-normal hover:underline"
                 href="#"
               >Freelancers in USA</a>
             </li>
@@ -108,14 +108,14 @@
         </div>
 
         <div class="w-1/2 lg:w-1/4 flex flex-col mx-auto">
-          <h4 class="pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal">
+          <h4 class="pt-10 pb-10 text-base uppercase font-semibold">
             Follow Us
           </h4>
-          <ul class="block flex flex-wrap flex-col justify-between w-full m-0 p-0">
+          <ul class="flex flex-wrap flex-col justify-between w-full m-0 p-0">
             <li class="list-none py-3">
               <a
                 href="#"
-                class="flex justify-start items-center font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="flex justify-start items-center font-normal hover:underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +142,7 @@
             <li class="list-none py-3">
               <a
                 href="#"
-                class="flex justify-start items-center font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="flex justify-start items-center font-normal hover:underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -160,7 +160,7 @@
             <li class="list-none py-3">
               <a
                 href="#"
-                class="flex justify-start items-center font-gotham-rounded-book text-footer-link font-normal hover:underline"
+                class="flex justify-start items-center font-normal hover:underline"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +185,7 @@
 
       <!-- Copyright Text -->
       <div class="w-full flex justify-center text-center py-10">
-        <span class="text-sm text-white">© 2020 Twiworker.</span>
+        <span class="text-base text-white">© 2020 Twiworker.</span>
       </div>
     </div>
   </footer>

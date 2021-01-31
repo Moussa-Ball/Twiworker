@@ -6,7 +6,7 @@
     >
       <div class="flex flex-col md:w-12/12 lg:w-9/12">
         <!-- Job Title -->
-        <h4 class="font-gotham-rounded text-gray-900 text-base font-medium">
+        <h4 class=" text-gray-900 text-base font-medium">
           {{ job.title }}
         </h4>
         <div class="flex flex-wrap items-center">
@@ -160,7 +160,7 @@
           </div>
         </div>
       
-        <p class="mt-5 text-sm text-gray-900 font-gotham-rounded-book font-light leading-5">
+        <p class="mt-5 text-sm text-gray-900  font-light leading-5">
           {{ job.description }}
         </p>
 
@@ -176,7 +176,7 @@
 
         <div class="flex flex-wrap items-baseline">
           <div class="flex items-baseline mr-4 mt-5">
-            <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">
+            <h4 class=" text-gray-800 text-sm font-medium pr-1">
               Bids:
             </h4>
             <p class="font-light text-sm">
@@ -184,7 +184,7 @@
             </p>
           </div>
           <div class="flex items-baseline mr-4 mt-5">
-            <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">
+            <h4 class=" text-gray-800 text-sm font-medium pr-1">
               Delivery:
             </h4>
             <p class="font-light text-sm">
@@ -192,7 +192,7 @@
             </p>
           </div>
           <div class="flex items-baseline mr-4 mt-5">
-            <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">
+            <h4 class=" text-gray-800 text-sm font-medium pr-1">
               Availibility:
             </h4>
             <p class="font-light text-sm">
@@ -200,7 +200,7 @@
             </p>
           </div>
           <div class="flex items-center mr-4 mt-5">
-            <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">
+            <h4 class=" text-gray-800 text-sm font-medium pr-1">
               Reviews:
             </h4>
             <p
@@ -275,14 +275,14 @@
             </button>
           </div>
           <div class="flex items-center justify-center">
-            <strong class="font-gotham-rounded pt-5 text-sm text-gray-800 font-medium">${{ job.amount }}</strong>
+            <strong class=" pt-5 text-sm text-gray-800 font-medium">${{ job.amount }}</strong>
           </div>
           <div class="flex items-center justify-center">
-            <span class="pt-2 text-sm text-gray-700 font-gotham-rounded-book font-light">{{ job.payment_type }}</span>
+            <span class="pt-2 text-sm text-gray-700  font-light">{{ job.payment_type }}</span>
           </div>
           <div class="md:pt-6 pt-4 flex items-center justify-center">
             <vue-circle
-              class="flex text-sm text-gray-700 font-gotham-rounded-book font-light leading-4"
+              class="flex text-sm text-gray-700  font-light leading-4"
               :progress="job.hire_rating"
               :scale="100"
               :precision="0"
@@ -316,7 +316,7 @@
       @closed="closed"
     >
       <div class="card card-custom shadow-btn-hover">
-        <h5 class="card-header card-header-custom flex items-center justify-between font-gotham-rounded-book text-gray-900 text-lg font-medium py-6 bg-white">
+        <h5 class="card-header card-header-custom flex items-center justify-between  text-gray-900 text-lg font-medium py-6 bg-white">
           {{ job.title }}
           <a
             class="pr-2"
@@ -340,7 +340,7 @@
             <div class="flex flex-wrap justify-between container mx-auto px-4 py-8 lg:py-16 lg:px-6">
               <div class="w-full lg:w-9/12">
                 <!-- Job title -->
-                <h2 class="font-gotham-rounded-book text-gray-800 text-lg lg:text-xl font-semibold leading-6">
+                <h2 class=" text-gray-800 text-lg lg:text-xl font-semibold leading-6">
                   {{ job.title }}
                 </h2>
                 
@@ -348,12 +348,12 @@
                 <div class="border-opacity-50 border-b border-gray-400 my-8 lg:hidden" />
                 
                 <!-- About the client -->
-                <h5 class="font-gotham-rounded text-gray-800 text-sm font-normal md:-mb-2 lg:mb-0 lg:mt-10">
+                <h5 class=" text-gray-800 text-sm font-normal md:-mb-2 lg:mb-0 lg:mt-10">
                   About the client
                 </h5>
                 <div class="flex flex-wrap items-baseline lg:mt-2">
                   <div class="flex items-center mr-4 mt-4 lg:mt-0">
-                    <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">
+                    <h4 class=" text-gray-800 text-sm font-medium pr-1">
                       Reviews:
                     </h4>
                     <p
@@ -375,7 +375,7 @@
                   </div>
                   
                   <div class="flex items-baseline mr-4 mt-4 lg:mt-0">
-                    <h4 class="font-gotham-rounded text-gray-800 text-sm font-medium pr-1">
+                    <h4 class=" text-gray-800 text-sm font-medium pr-1">
                       Location:
                     </h4>
                     <p class="font-light text-sm">
@@ -440,13 +440,13 @@
 
               <!-- Project Budget -->
               <div class="flex flex-col justify-start items-start lg:justify-center lg:items-center w-12/12 lg:w-48 xl:w-48 lg:bg-white lg:shadow-btn-hover lg:h-32">
-                <h5 class="hidden lg:block font-gotham-rounded-book text-gray-800 text-base font-light mb-4">
+                <h5 class="hidden lg:block  text-gray-800 text-base font-light mb-4">
                   Hourly Rate
                 </h5>
-                <h5 class="block lg:hidden font-gotham-rounded text-gray-800 text-sm font-normal mb-4">
+                <h5 class="block lg:hidden  text-gray-800 text-sm font-normal mb-4">
                   Hourly Rate
                 </h5>
-                <strong class="text-lg text-gray-800 font-gotham-rounded-book font-medium">$2,500 - $3,500</strong>
+                <strong class="text-lg text-gray-800  font-medium">$2,500 - $3,500</strong>
               </div>
             </div>
           </div>
@@ -458,14 +458,14 @@
               <!-- Job informations -->
               <div class="w-12/12 lg:w-8/12">
                 <div class="card card-custom w-auto shadow-dropdown">
-                  <h5 class="card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200">
+                  <h5 class="card-header card-header-custom  text-gray-700 text-base font-medium py-6 border-b border-gray-200">
                     Details
                   </h5>
                   <div class="card-body container px-4 lg:px-5">
-                    <h4 class="mt-2 font-gotham-rounded text-gray-700 text-sm font-medium py-4">
+                    <h4 class="mt-2  text-gray-700 text-sm font-medium py-4">
                       Description
                     </h4>
-                    <p class="mt-2 text-sm text-gray-900 font-gotham-rounded-book font-light pb-4 leading-5">
+                    <p class="mt-2 text-sm text-gray-900  font-light pb-4 leading-5">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aperiam temporibus, ipsa dolorum accusamus, impedit quod error quisquam illum earum vero at perspiciatis nulla voluptatum! Doloribus iste voluptatum itaque nulla?
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aperiam temporibus, ipsa dolorum accusamus, impedit quod error quisquam illum earum vero at perspiciatis nulla voluptatum! Doloribus iste voluptatum itaque nulla?
                     </p>
@@ -474,7 +474,7 @@
                   <div class="border-b mx-5 mb-4" />
 
                   <div class="card-body container px-4 lg:px-5">
-                    <h4 class="mt-2 font-gotham-rounded text-gray-700 text-sm font-medium pb-4">
+                    <h4 class="mt-2  text-gray-700 text-sm font-medium pb-4">
                       Attachment(s)
                     </h4>
                     <div class="pb-5 flex flex-col justify-between">
@@ -493,7 +493,7 @@
                         </svg>
                         <a
                           href="#"
-                          class="block font-gotham-rounded font-medium text-link text-primary hover:underline pl-2"
+                          class="block  font-medium text-link text-primary hover:underline pl-2"
                         >
                           document concerning the house to be cleaned.txt (130 KB)
                         </a>
@@ -513,7 +513,7 @@
                         </svg>
                         <a
                           href="#"
-                          class="block font-gotham-rounded font-medium text-link text-primary hover:underline pl-2"
+                          class="block  font-medium text-link text-primary hover:underline pl-2"
                         >
                           example of contract for one who is exempt from doing the work.txt (28 KB) 
                         </a>
@@ -524,7 +524,7 @@
                   <div class="border-b mx-5 mb-4" />
 
                   <div class="card-body container px-4 lg:px-5">
-                    <h4 class="mt-2 font-gotham-rounded text-gray-700 text-sm font-medium pb-4">
+                    <h4 class="mt-2  text-gray-700 text-sm font-medium pb-4">
                       Expertise Field
                     </h4>
                     <div class="pb-5">
@@ -542,7 +542,7 @@
                 </div>
 
                 <div class="card card-custom w-auto shadow-dropdown mt-8">
-                  <h5 class="card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200">
+                  <h5 class="card-header card-header-custom  text-gray-700 text-base font-medium py-6 border-b border-gray-200">
                     Freelancers Bidding (2)
                   </h5>
                   <div class="card-body container px-4 lg:px-5 overflow-y-auto max-h-feedbacks">
@@ -565,7 +565,7 @@
                           </a>
                           <div class="flex flex-col pl-2 leading-5">
                             <a href="#">
-                              <h5 class="font-gotham-book text-link text-gray-800 font-semibold">Melinda Gates</h5>
+                              <h5 class="font-gotham text-link text-gray-800 font-semibold">Melinda Gates</h5>
                               <span class="text-link text-gray-600">Graphic Designer</span>
                             </a>
                           </div>
@@ -581,7 +581,7 @@
                           />
                         </div>
                         <div class="flex flex-col items-center">
-                          <strong class="text-link text-gray-800 font-gotham-rounded font-medium pb-2">$40,00</strong>
+                          <strong class="text-link text-gray-800  font-medium pb-2">$40,00</strong>
                           <span class="text-link text-gray-800">Hourly Rate</span>
                         </div>
                       </div>
@@ -607,7 +607,7 @@
                           </a>
                           <div class="flex flex-col pl-2 leading-5">
                             <a href="#">
-                              <h5 class="font-gotham-book text-link text-gray-800 font-semibold">Melinda Gates</h5>
+                              <h5 class="font-gotham text-link text-gray-800 font-semibold">Melinda Gates</h5>
                               <span class="text-link text-gray-600">Graphic Designer</span>
                             </a>
                           </div>
@@ -623,7 +623,7 @@
                           />
                         </div>
                         <div class="flex flex-col items-center">
-                          <strong class="text-link text-gray-800 font-gotham-rounded font-medium pb-2">$40,00</strong>
+                          <strong class="text-link text-gray-800  font-medium pb-2">$40,00</strong>
                           <span class="text-link text-gray-800">Hourly Rate</span>
                         </div>
                       </div>
@@ -633,14 +633,14 @@
                 </div>
 
                 <div class="card card-custom w-auto shadow-dropdown mt-8">
-                  <h5 class="card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200">
+                  <h5 class="card-header card-header-custom  text-gray-700 text-base font-medium py-6 border-b border-gray-200">
                     Feedbacks (2)
                   </h5>
                   <div class="card-body container px-4 lg:px-5 overflow-y-auto max-h-feedbacks">
                     <!-- Feedback Item -->
                     <div class="flex flex-col py-4">
                       <div class="flex flex-wrap items-baseline justify-between">
-                        <strong class="font-gotham-book text-sm text-gray-900 font-semibold leading-5 mr-2">Developer to build a custom screensaver for MacOS</strong>
+                        <strong class="font-gotham text-sm text-gray-900 font-semibold leading-5 mr-2">Developer to build a custom screensaver for MacOS</strong>
                         <span class="text-sm text-gray-900 font-medium leading-5 mt-1">Rated as Client</span>
                       </div>
                       <p
@@ -662,7 +662,7 @@
                         </span>
                         <span class="ml-4 mt-1 flex items-center text-sm text-gray-900 font-medium">19 April 2020</span>
                       </p>
-                      <p class="mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5">
+                      <p class="mt-4 text-sm flex items-start text-gray-900  font-light leading-5">
                         <read-more
                           class="read-more leading-5"
                           link="javascript:void;"
@@ -681,7 +681,7 @@
                     <!-- Feedback Item -->
                     <div class="flex flex-col py-4">
                       <div class="flex flex-wrap items-baseline justify-between">
-                        <strong class="font-gotham-book text-sm text-gray-900 font-semibold leading-5 mr-2">Developer to build a custom screensaver for MacOS</strong>
+                        <strong class="font-gotham text-sm text-gray-900 font-semibold leading-5 mr-2">Developer to build a custom screensaver for MacOS</strong>
                         <span class="text-sm text-gray-900 font-medium leading-5 mt-1">Rated as Client</span>
                       </div>
                       <p
@@ -703,7 +703,7 @@
                         </span>
                         <span class="ml-4 mt-1 flex items-center text-sm text-gray-900 font-medium">19 April 2020</span>
                       </p>
-                      <p class="mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5">
+                      <p class="mt-4 text-sm flex items-start text-gray-900  font-light leading-5">
                         <read-more
                           class="read-more leading-5"
                           link="javascript:void;"
@@ -722,10 +722,10 @@
               <!-- Sidebar -->
               <div class="w-full lg:w-4/12 lg:pl-6">
                 <div class="w-full flex flex-col">
-                  <button class="w-full bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">
+                  <button class="w-full bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0  font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">
                     Apply Now
                   </button>
-                  <button class="flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">
+                  <button class="flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4  font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">
                     <span class="ml-4 bg-gray-200 flex items-center justify-center h-8 w-8 rounded-full focus:outline-none">
                       <svg
                         class="w-3 h-3"
@@ -762,7 +762,7 @@
                     </span> 
                     <span class="pl-3">Flag as Inappropriate</span>
                   </button>
-                  <button class="flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">
+                  <button class="flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4  font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out">
                     <span class="ml-4 bg-gray-200 flex items-center justify-center h-8 w-8 rounded-full focus:outline-none">
                       <svg
                         class="w-3 h-3"
@@ -784,11 +784,11 @@
 
                 <div class="flex flex-col">
                   <div class="mt-6">
-                    <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Posted at:</strong>
+                    <strong class="font-gotham text-sm text-gray-700 font-semibold">Posted at:</strong>
                     <span class="text-sm text-gray-700">2 hours ago</span>
                   </div>
                   <div class="mt-6 flex items-center">
-                    <strong class="font-gotham-book text-sm text-gray-700 font-semibold">English Level:</strong>
+                    <strong class="font-gotham text-sm text-gray-700 font-semibold">English Level:</strong>
                     <span class="ml-1 text-sm text-gray-700">Fluent</span>
                     <svg
                       class="ml-2 w-5 h-5"
@@ -808,15 +808,15 @@
                     </svg>
                   </div>
                   <div class="mt-6">
-                    <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Time in New York:</strong>
+                    <strong class="font-gotham text-sm text-gray-700 font-semibold">Time in New York:</strong>
                     <span class="text-sm text-gray-700">8:22 pm</span>
                   </div>
                   <div class="mt-6">
-                    <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Interviewing:</strong>
+                    <strong class="font-gotham text-sm text-gray-700 font-semibold">Interviewing:</strong>
                     <span class="text-sm text-gray-700">2</span>
                   </div>
                   <div class="mt-6">
-                    <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Bids:</strong>
+                    <strong class="font-gotham text-sm text-gray-700 font-semibold">Bids:</strong>
                     <span class="text-sm text-gray-700">2</span>
                   </div>
                 </div>
@@ -824,7 +824,7 @@
                 <div class="border-b border-gray-400 mt-6" />
 
                 <div class="flex flex-col mt-6">
-                  <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Request Link</strong>
+                  <strong class="font-gotham text-sm text-gray-700 font-semibold">Request Link</strong>
                   <div class="w-full flex mt-6">
                     <input
                       class="flex-1 px-4 py-3 focus:outline-none text-sm text-gray-700 bg-input border border-message cursor-not-allowed opacity-75"
@@ -849,7 +849,7 @@
                 <div class="border-b border-gray-400 mt-6" />
 
                 <div class="flex flex-col mt-6">
-                  <strong class="font-gotham-book text-sm text-gray-700 font-semibold">Share</strong>
+                  <strong class="font-gotham text-sm text-gray-700 font-semibold">Share</strong>
                   <div class="flex items-center justify-between mt-6">
                     <button
                       v-tippy="{placement: 'bottom', arrow: true, theme: 'light'}"

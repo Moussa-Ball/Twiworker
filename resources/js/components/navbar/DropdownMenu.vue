@@ -1,6 +1,6 @@
 <template>
   <li
-    class="lg:z-20 font-gotham-rounded uppercase border-b lg:border-none border-gray-200 relative"
+    class="lg:z-20  uppercase border-b lg:border-none border-gray-200 relative"
     @mouseover="open = true"
     @mouseleave="open = false"
   >
@@ -28,11 +28,11 @@
     </div>
     
     <div class="hidden lg:block absolute w-full z-10 cursor-pointer">
-&nbsp;
+      &nbsp;
     </div>
-    <div class="lg:hidden static float-none lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-2 lg:mt-12 -mt-4">
+    <div class="lg:hidden static lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-2 lg:mt-12 -mt-4">
       <slide-up-down
-        class="w-full lg:flex lg:items-center lg:w-auto lg:hidden"
+        class="w-full lg:flex lg:items-center lg:w-auto"
         :active="open"
         :duration="300"
       >
@@ -42,7 +42,7 @@
     
     <div
       :class="open ? 'lg:block' : 'lg:hidden'"
-      class="hidden tw-dropdown-menu static float-none lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-3 lg:py-2 lg:mt-12 -mt-4"
+      class="hidden tw-dropdown-menu static lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-3 lg:py-2 lg:mt-12 -mt-4"
     >
       <slot />
     </div>

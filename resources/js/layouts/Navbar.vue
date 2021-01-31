@@ -42,21 +42,21 @@
         :duration="300"
       >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto pt-4 lg:pt-0">
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               :class="{'text-primary': loginRouteActive}"
               :href="loginRoute"
             >Sign in</a>
           </li>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               :class="{'text-primary': registerRouteActive}"
               :href="registerRoute"
             >Sign up</a>
           </li>
-          <li class="font-gotham-rounded uppercase lg:normal-case">
+          <li class=" uppercase lg:normal-case">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal"
               href="#"
@@ -78,35 +78,35 @@
             link="#"
           >
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               href="#"
             >News Feed</a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               href="#"
             >Search Job</a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               href="#"
             >My biddings</a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               href="#"
             >My Contracts</a>
           </DropdownMenu>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               href="#"
             >Freelancers</a>
           </li>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               href="#"
             >Profile</a>
           </li>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               href="#"
@@ -143,37 +143,37 @@
             link="#"
           >
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               :href="route('jobs.index')"
             >
               News Feed
             </a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               href="#"
             >Search Job</a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               href="#"
             >My biddings</a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
               href="#"
             >My Contracts</a>
           </DropdownMenu>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               :href="route('freelancers.index')"
             >Freelancers</a>
           </li>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               href="#"
             >Profile</a>
           </li>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               href="#"
@@ -188,21 +188,21 @@
         class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:pt-0"
       >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto">
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               :class="{'text-primary': loginRouteActive}"
               :href="loginRoute"
             >Sign in</a>
           </li>
-          <li class="font-gotham-rounded uppercase border-b lg:border-none border-gray-200">
+          <li class=" uppercase border-b lg:border-none border-gray-200">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
               :class="{'text-primary': registerRouteActive}"
               :href="registerRoute"
             >Sign up</a>
           </li>
-          <li class="font-gotham-rounded uppercase lg:normal-case">
+          <li class=" uppercase lg:normal-case">
             <a
               class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 lg:hover:shadow-btn-hover trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal"
               href="#"

@@ -4,7 +4,7 @@
 <div class="container mx-auto flex justify-center items-center">
     <div class="flex flex-wrap justify-center">
         <div class="md:w-400px lg:w-400px w-auto mx-3">
-            <div class="my-16 flex flex-col break-words bg-white border border-2 rounded-none shadow-dropdown">
+            <div class="my-16 flex flex-col break-words bg-white border rounded-none shadow-dropdown">
                 <div class="font-semibold text-gray-700 py-3 px-6 mb-0 uppercase self-center mt-6">
                     {{ __('Create an account') }}
                 </div>
@@ -84,19 +84,19 @@
                             {{ __('Sign up') }}
                         </button>
 
-                        <div class="w-full flex items-center my-6 text-xs text-gray-600 font-gotham-rounded font-medium">
+                        <div class="w-full flex items-center my-6 text-xs text-gray-600 font-medium">
                             <div class="flex-1 border-b"></div>
                             <div class="px-2 uppercase">or</div>
                             <div class="flex-1 border-b"></div>
                         </div>
 
-                        <a href="{{ route('socialite.auth', 'facebook') }}" class="transitionn duration-300 shadow-dropdown hover:shadow-btn-hover flex items-center justify-center bg-facebook hover:bg-opacity-95 shadow-sm text-gray-100 font-medium mb-3 py-3 px-4 rounded-none text-center text-sm focus:outline-none w-full uppercase">
+                        <a href="{{ route('socialite.auth', 'facebook') }}" class="transitionn duration-300 shadow-dropdown hover:shadow-btn-hover flex items-center justify-center bg-facebook hover:bg-opacity-95 text-gray-100 font-medium mb-3 py-3 px-4 rounded-none text-center text-sm focus:outline-none w-full uppercase">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="h-4 pr-2 fill-current text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                 <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
                             </svg>
                             <span>{{ __('Sign up with facebook') }}</span>
                         </a>
-                        <a href="{{ route('socialite.auth', 'google') }}" class="transitionn duration-300 shadow-dropdown hover:shadow-btn-hover flex items-center justify-center bg-google hover:bg-opacity-95 shadow-sm text-gray-100 font-medium py-3 px-4 rounded-none text-center text-sm focus:outline-none w-full uppercase">
+                        <a href="{{ route('socialite.auth', 'google') }}" class="transitionn duration-300 shadow-dropdown hover:shadow-btn-hover flex items-center justify-center bg-google hover:bg-opacity-95 text-gray-100 font-medium py-3 px-4 rounded-none text-center text-sm focus:outline-none w-full uppercase">
                             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="h-4 pr-2 fill-current text-white" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
                                 <path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path>
                             </svg>

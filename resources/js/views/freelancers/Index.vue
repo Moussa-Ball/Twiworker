@@ -5,18 +5,22 @@
       <div class="w-full lg:w-3/12">
         <div class="flex justify-between items-center">
           <!-- Page title -->
-          <h4 class="font-gotham-rounded text-gray-800 font-medium text-base">
+          <h4 class=" text-gray-800 font-medium text-base">
             Find Talents
           </h4>
           <a
             href="javascript:void;"
-            class="font-gotham-rounded font-medium text-xs text-primary hover:underline"
+            class="font-medium text-xs text-primary hover:underline"
           >CLEAR ALL</a>
         </div>
 
         <div class="block">
           <!-- Location -->
-          <expander-filter name="Location" />
+          <expander-filter name="Location">
+            <country-select className="form-select w-full rounded-none text-sm text-gray-500 focus:text-gray-600 focus:border-gray-300 focus:shadow-none" v-model="location.country" :country="location.country" />
+            <div class="border-t my-4" />
+            <region-select className="form-select w-full rounded-none text-sm text-gray-500 focus:text-gray-600 focus:border-gray-300 focus:shadow-none" v-model="location.region" :country="location.country" :region="region" />
+          </expander-filter>
           
           <!-- Categories -->
           <expander-filter
@@ -74,10 +78,10 @@
       </div>
 
       <!-- COL-9 -->
-      <div class="w-full lg:w-9/12 px-0 lg:pl-4">
+      <div class="w-full lg:w-9/12 px-0 lg:pl-4 mt-12 lg:mt-0">
         <div class="bg-white shadow-dropdown">
           <div class="flex justify-between items-center py-6 px-6">
-            <card-result :number="25" />
+            <card-result class="hidden lg:inline-block" :number="25" />
             <card-input-search placeholder="eg: First Name, Last Name, Skills, Country or keyword…" />
           </div>
           <ul>
@@ -98,6 +102,10 @@
 export default {
   data() {
     return {
+      location: {
+        region: '',
+        country: '',
+      },
       categories: {
         value: "",
         options: [

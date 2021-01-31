@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center text-sm text-gray-600 font-gotham-rounded-book font-normal ml-6">
+  <div class="flex items-center text-sm text-gray-600 font-normal ml-6">
     Sort By: 
     <div
       v-click-outside="hide"
@@ -22,19 +22,19 @@
       >
         <a
           href="#"
-          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none"
         >Relevance</a>
         <a
           href="#"
-          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none"
         >Newest</a>
         <a
           href="#"
-          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none"
         >Oldest</a>
         <a
           href="#"
-          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+          class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none"
         >Random</a>
       </div>
     </div>

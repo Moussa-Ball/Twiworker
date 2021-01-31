@@ -4,52 +4,44 @@
     class="relative flex"
   >
     <button
-      class="flex items-center border-2 py-3 px-4 rounded-none focus:outline-none"
+      class="flex items-center focus:ring-2 focus:ring-offset-1 focus:ring-offset-blue-100 border-2 py-3 px-5 rounded-none focus:outline-none"
       @click="open = !open"
     >
-      <span class="text-link">English</span>
-      <span class="pl-2">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="13.389"
-          height="7.865"
-          viewBox="0 0 13.389 7.865"
-        >
-          <g transform="translate(0 7.865) rotate(-90)">
-            <g transform="translate(0 0)">
-              <path
-                d="M104.123,6.7l5.009-5.009a.734.734,0,0,0,0-1.036l-.439-.439a.734.734,0,0,0-1.036,0l-5.964,5.964a.739.739,0,0,0,0,1.039l5.958,5.958a.734.734,0,0,0,1.036,0l.439-.439a.733.733,0,0,0,0-1.036Z"
-                transform="translate(-101.48 0)"
-                fill="#fff"
-              />
-            </g>
-          </g>
+      <span class="text-sm font-semibold">English</span>
+      <span class="ml-3 -mt-2 relative" style="bottom: 1px;">
+        <svg class="w-3 text-white fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+          <path fill="currentColor" d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z"></path>
         </svg>
       </span>
     </button>
     <div
-      :class="open ? 'block' : 'hidden'"
-      class="float-none absolute right-0 tw-dropdown-language shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-2"
+      :class="open ? 'translate-y-16 opacity-100' : 'translate-y-14 opacity-0'"
+      class="transform transition-all duration-300 ease-in-out float-none absolute right-0 tw-dropdown-language shadow-btn-hover bg-white list-none text-left min-w-10rem py-2 mt-1"
     >
       <a
         href="#"
-        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none"
       >普通话</a>
       <a
         href="#"
-        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
-      >English</a>
+        class="flex items-center justify-between w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none"
+      >
+        <span>English</span>
+        <svg class="w-3 text-primary fill-current" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path>
+        </svg>
+      </a>
       <a
         href="#"
-        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none"
       >Spanish</a>
       <a
         href="#"
-        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none"
       >French</a>
       <a
         href="#"
-        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none"
+        class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none"
       >German</a>
     </div>
   </div>

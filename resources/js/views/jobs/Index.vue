@@ -4,7 +4,7 @@
       <!-- COL-3 -->
       <div class="w-full lg:w-3/12">
         <!-- Page title -->
-        <h4 class="font-gotham-rounded text-gray-900 font-medium text-xl">
+        <h4 class=" text-gray-800 font-medium text-xl">
           News Feed
         </h4>
         
@@ -33,7 +33,7 @@
 
         <!-- Shortcuts -->
         <div class="flex flex-col mt-10">
-          <h5 class="font-gotham-rounded text-gray-900 text-base font-normal mb-4">
+          <h5 class=" text-gray-900 text-base font-normal mb-4">
             Shortcuts
           </h5>
           <a
@@ -52,11 +52,11 @@
 
         <!-- Filters -->
         <div class="flex flex-col">
-          <h5 class="font-gotham-rounded text-gray-800 text-base font-normal mt-10 mb-2">
+          <h5 class=" text-gray-800 text-base font-normal mt-10 mb-2">
             My Filters
           </h5>
           <div class="my-4 bg-white w-full py-2 px-6 shadow-dropdown flex justify-between items-center">
-            <span class="font-gotham-rounded text-sm text-gray-600">News Feed</span>
+            <span class=" text-sm text-gray-600">News Feed</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -81,11 +81,11 @@
 
         <!-- Summary -->
         <div class="flex flex-col mb-10">
-          <h5 class="font-gotham-rounded text-gray-800 text-base font-normal mt-10 mb-4">
+          <h5 class=" text-gray-800 text-base font-normal mt-10 mb-4">
             Summary
           </h5>
 
-          <div class="flex justify-between items-cemter mt-2 mt-0 px-4 py-3 font-gotham-rounded-book text-sm font-normal text-gray-600 bg-message bg-opacity-20 border-b border-message">
+          <div class="flex justify-between items-cemter mt-2 mt-0 px-4 py-3  text-sm font-normal text-gray-600 bg-message bg-opacity-20 border-b border-message">
             <div>
               <a
                 href="#"
@@ -94,7 +94,7 @@
             </div>
             <div>140</div>
           </div>
-          <div class="flex justify-between items-cemter mt-0 px-4 py-3 font-gotham-rounded-book text-sm font-normal text-gray-600 border-b border-message">
+          <div class="flex justify-between items-cemter mt-0 px-4 py-3  text-sm font-normal text-gray-600 border-b border-message">
             <div>
               <a
                 href="#"
@@ -103,7 +103,7 @@
             </div>
             <div>4</div>
           </div>
-          <div class="flex justify-between items-cemter mt-0 px-4 py-3 font-gotham-rounded-book text-sm font-normal text-gray-600 bg-message bg-opacity-20">
+          <div class="flex justify-between items-cemter mt-0 px-4 py-3  text-sm font-normal text-gray-600 bg-message bg-opacity-20">
             <div>
               <a
                 href="#"
@@ -116,7 +116,7 @@
 
         <!-- Messages -->
         <div class="flex flex-col mb-10">
-          <h5 class="font-gotham-rounded text-gray-800 text-base font-normal mb-6">
+          <h5 class=" text-gray-800 text-base font-normal mb-6">
             Messages
           </h5>
           
@@ -254,7 +254,7 @@
           </div>
 
           <div class="flex flex-col mt-10">
-            <h5 class="font-gotham-rounded text-gray-800 text-base font-normal mb-6">
+            <h5 class=" text-gray-800 text-base font-normal mb-6">
               Messages
             </h5>
             <span class="text-sm mb-2">You do not have a message yet.</span>
@@ -270,7 +270,7 @@
       <div class="w-full lg:w-9/12 px-0 lg:pl-4">
         <button
           v-if="false"
-          class="font-gotham-rounded text-sm font-medium text-gray-700 bg-white shadow-dropdown hover:shadow-btn-hover py-3 mb-4 w-full focus:outline-none transition duration-200 ease-in-out"
+          class=" text-sm font-medium text-gray-700 bg-white shadow-dropdown hover:shadow-btn-hover py-3 mb-4 w-full focus:outline-none transition duration-200 ease-in-out"
         >
           New jobs have just been posted. Click to see them.
         </button>
