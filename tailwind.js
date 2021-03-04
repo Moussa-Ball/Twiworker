@@ -4,13 +4,29 @@ module.exports = {
     purge: ["./resources/views/**/*.blade.php", "./resources/css/**/*.css"],
     darkMode: 'class',
     theme: {
+        fontFeatureSettings: {
+            numeric: ['tnum', 'salt', 'ss02']
+        },
+        fontSize: {
+            xs: '0.75rem',
+            sm: '0.875rem',
+            base: '1rem',
+            lg: '1.125rem',
+            xl: '36px',
+            '2xl': '1.5rem',
+            '3xl': '1.875rem',
+            '4xl': '2.25rem',
+            '5xl': '3rem',
+            '6xl': '4rem',
+            xxs: "0.68rem",
+            link: "13px",
+            "footer-link": "15px",
+            "footer-title": "0.875rem"
+        },
         container: {
             center: true
         },
         fontFamily: {
-            "gotham-rounded": ["Gotham Rounded"],
-            "gotham-rounded-book": ["Gotham Rounded Book"],
-            sans: ["Open Sans", "sans-serif"],
             nunito: ['Nunito', 'sans-serif']
         },
         extend: {
@@ -65,12 +81,6 @@ module.exports = {
             },
             inset: {
                 "2": "20px"
-            },
-            fontSize: {
-                xxs: "0.68rem",
-                link: "13px",
-                "footer-link": "15px",
-                "footer-title": "0.875rem"
             },
             boxShadow: {
                 dropdown: "0 0 6px rgba(50 ,50 , 50, .25)",
@@ -127,6 +137,7 @@ module.exports = {
         }),
         function({ addUtilities }) {
             addUtilities({ ".empty-content": { content: "''" } }, ["before"]);
-        }
+        },
+        require('tailwindcss-font-inter')()
     ]
 };

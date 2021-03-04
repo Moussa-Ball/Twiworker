@@ -2464,6 +2464,169 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/KitUI.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/KitUI.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/Accordion.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/accordion/Accordion.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    shadow: {
+      type: Boolean,
+      "default": true
+    },
+    border: {
+      type: Boolean,
+      "default": false
+    }
+  },
+  name: 'accordion'
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'accordion-item',
+  props: {
+    header: {
+      type: String,
+      required: true
+    }
+  },
+  data: function data() {
+    return {
+      open: false
+    };
+  },
+  methods: {
+    show: function show() {
+      this.open = !this.open;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: 'button-base',
+  props: {
+    type: {
+      type: String,
+      required: true,
+      "default": function _default() {
+        return ['primary', 'danger'];
+      }
+    },
+    size: {
+      type: String,
+      required: true,
+      "default": function _default() {
+        return ['small', 'medium', 'large'];
+      }
+    }
+  },
+  computed: {
+    style: function style() {
+      if (this.type == 'primary') {
+        return 'bg-primary';
+      }
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/account/SelectAccountType.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/account/SelectAccountType.vue?vue&type=script&lang=js& ***!
@@ -2525,14 +2688,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3935,9 +4090,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     token: {
@@ -4422,6 +4574,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_navbar_DropdownMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/navbar/DropdownMenu */ "./resources/js/components/navbar/DropdownMenu.vue");
 /* harmony import */ var _components_navbar_AccountDropdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/navbar/AccountDropdown */ "./resources/js/components/navbar/AccountDropdown.vue");
 /* harmony import */ var _components_navbar_SearchComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/navbar/SearchComponent */ "./resources/js/components/navbar/SearchComponent.vue");
+//
 //
 //
 //
@@ -6004,7 +6157,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".vue-simple-progress-text {\n  font-size: 13px !important;\n}\n.vue-simple-progress {\n  margin-top: 0.5rem;\n}\n.read-more p {\n  display: inline;\n}\n.read-more a {\n  --text-opacity: 1;\n  color: #293fdf;\n  color: rgba(41, 63, 223, var(--text-opacity));\n}\n.read-more a:hover {\n  text-decoration: underline;\n}", ""]);
+exports.push([module.i, ".vue-simple-progress-text {\n  font-size: 13px !important;\n}\n.vue-simple-progress {\n  margin-top: 0.5rem;\n}\n.read-more p {\n  display: inline;\n}\n.read-more a {\n  --tw-text-opacity: 1;\n  color: rgba(41, 63, 223, var(--tw-text-opacity));\n}\n.read-more a:hover {\n  text-decoration: underline;\n}", ""]);
 
 // exports
 
@@ -6023,7 +6176,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".tw-account-dropdown-box .tw-account-dropdown {\n  transform: translateX(7%);\n}\n.tw-account-dropdown-box .tw-account-dropdown:before {\n  content: \"\";\n  position: absolute;\n  top: -6px;\n  right: 30px;\n  border: 6px solid #fff;\n  transform: translateX(-40%) rotate(135deg);\n  box-shadow: -2px 2px 2px rgba(50, 50, 50, 0.1);\n}", ""]);
+exports.push([module.i, ".tw-account-dropdown-box .tw-account-dropdown:before {\n  content: \"\";\n  position: absolute;\n  top: -6px;\n  right: 30px;\n  border: 6px solid #fff;\n  transform: translateX(-40%) rotate(135deg);\n  box-shadow: -2px 2px 2px rgba(50, 50, 50, 0.1);\n}", ""]);
 
 // exports
 
@@ -26458,10 +26611,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass:
-        "flex items-center text-sm text-gray-600 font-gotham-rounded-book font-normal ml-6"
-    },
+    { staticClass: "flex items-center text-sm text-gray-600 font-normal ml-6" },
     [
       _vm._v("\n  Sort By: \n  "),
       _c(
@@ -26535,7 +26685,7 @@ var render = function() {
                 "a",
                 {
                   staticClass:
-                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Relevance")]
@@ -26545,7 +26695,7 @@ var render = function() {
                 "a",
                 {
                   staticClass:
-                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Newest")]
@@ -26555,7 +26705,7 @@ var render = function() {
                 "a",
                 {
                   staticClass:
-                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Oldest")]
@@ -26565,7 +26715,7 @@ var render = function() {
                 "a",
                 {
                   staticClass:
-                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                    "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-700 hover:bg-gray-200 capitalize border-none",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Random")]
@@ -26664,10 +26814,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass:
-        "flex items-center text-sm text-gray-600 font-gotham-rounded-book font-normal mr-6"
-    },
+    { staticClass: "flex items-center text-sm text-gray-600 font-normal mr-6" },
     [
       _c("strong", { staticClass: "mr-1 font-semibold text-gray-800" }, [
         _vm._v(_vm._s(_vm.number))
@@ -26718,14 +26865,9 @@ var render = function() {
           }
         },
         [
-          _c(
-            "h5",
-            {
-              staticClass:
-                "font-gotham-rounded text-gray-900 text-sm font-normal"
-            },
-            [_vm._v("\n      " + _vm._s(_vm.name) + "\n    ")]
-          ),
+          _c("h5", { staticClass: "text-gray-900 text-sm font-normal" }, [
+            _vm._v("\n      " + _vm._s(_vm.name) + "\n    ")
+          ]),
           _vm._v(" "),
           _c(
             "div",
@@ -26959,6 +27101,252 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/KitUI.vue?vue&type=template&id=f3f4634c&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/KitUI.vue?vue&type=template&id=f3f4634c& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass:
+        "container mx-auto px-4 lg:px-6 my-20 flex flex-wrap items-center justify-between"
+    },
+    [
+      _c("div", { staticClass: "flex flex-wrap" }, [
+        _c(
+          "div",
+          { staticClass: "w-full lg:w-6/12 pr-8" },
+          [
+            _c(
+              "h2",
+              { staticClass: "mb-20 font-semibold text-gray-800 text-xl" },
+              [_vm._v("Accordion")]
+            ),
+            _vm._v(" "),
+            _c(
+              "accordion",
+              _vm._l(10, function(i) {
+                return _c(
+                  "accordion-item",
+                  { key: i, attrs: { header: "Title of this section: " + i } },
+                  [
+                    _vm._v(
+                      "\n                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quis animi rem fuga fugit eum maiores, tenetur dolores iusto similique nemo quos soluta ipsum id doloremque temporibus nihil sunt omnis.\n                "
+                    )
+                  ]
+                )
+              }),
+              1
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "w-full lg:w-6/12" },
+          [
+            _c(
+              "h2",
+              { staticClass: "mb-20 font-semibold text-gray-800 text-xl" },
+              [_vm._v("Buttons")]
+            ),
+            _vm._v(" "),
+            _c("button-base", { attrs: { type: "primary", size: "small" } }, [
+              _vm._v("Normal Button")
+            ])
+          ],
+          1
+        )
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/Accordion.vue?vue&type=template&id=2f1f5b9e&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/accordion/Accordion.vue?vue&type=template&id=2f1f5b9e& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "w-full bg-white",
+      class: [
+        _vm.shadow ? "shadow-dropdown" : "",
+        _vm.border ? "border border-gray-200" : ""
+      ]
+    },
+    [_vm._t("default")],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=template&id=26d6fb64&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=template&id=26d6fb64& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "w-full" },
+    [
+      _vm.$vnode.key > 1 ? _c("div", { staticClass: "border-b" }) : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "flex justify-between items-center cursor-pointer px-10 py-8",
+          attrs: { id: _vm.open == false ? "accordion-identifier" : "" },
+          on: { click: _vm.show }
+        },
+        [
+          _c(
+            "h5",
+            {
+              staticClass: " text-gray-900 text-base font-normal",
+              class: _vm.open ? "text-primary" : ""
+            },
+            [_vm._v("\n            " + _vm._s(_vm.header) + "\n        ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "mr-2 transform transition duration-300 ease-in-out",
+              class: _vm.open ? "-rotate-90" : "rotate-90"
+            },
+            [
+              _c(
+                "svg",
+                {
+                  staticClass: "h-4 fill-current text-gray-700",
+                  class: _vm.open ? "text-primary" : "",
+                  attrs: {
+                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 320 512"
+                  }
+                },
+                [
+                  _c("path", {
+                    attrs: {
+                      d:
+                        "M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+                    }
+                  })
+                ]
+              )
+            ]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "slide-up-down",
+        {
+          staticClass: "block relative",
+          attrs: { active: _vm.open, duration: 300 }
+        },
+        [
+          _c(
+            "p",
+            { staticClass: "px-10 pb-8 pt-2 text-sm text-gray-800 leading-5" },
+            [
+              _vm._v(
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, eius distinctio? Obcaecati repellat vero blanditiis veritatis quos? Ipsam, placeat! Nostrum corrupti debitis sint minus corporis tempora perferendis repellendus porro libero."
+              )
+            ]
+          )
+        ]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=template&id=13a9bcb1&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=template&id=13a9bcb1& ***!
+  \************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "button",
+    {
+      staticClass:
+        "rounded-sm focus:ring-4 focus:ring-offset-2 focus:ring-blue-400 bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0 font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-100 ease-in-out",
+      class: _vm.style
+    },
+    [_vm._t("default")],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/account/SelectAccountType.vue?vue&type=template&id=74664cae&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/account/SelectAccountType.vue?vue&type=template&id=74664cae& ***!
@@ -27088,7 +27476,7 @@ var render = function() {
         "button",
         {
           staticClass:
-            "flex items-center border-2 py-3 px-4 rounded-none focus:outline-none",
+            "flex items-center transition duration-300 ease rounded-sm focus:ring-2 focus:ring-offset-1 focus:ring-offset-blue-100 border-2 py-3 px-5 focus:outline-none",
           on: {
             click: function($event) {
               _vm.open = !_vm.open
@@ -27096,39 +27484,39 @@ var render = function() {
           }
         },
         [
-          _c("span", { staticClass: "text-link" }, [_vm._v("English")]),
+          _c("span", { staticClass: "text-sm font-semibold" }, [
+            _vm._v("English")
+          ]),
           _vm._v(" "),
-          _c("span", { staticClass: "pl-2" }, [
-            _c(
-              "svg",
-              {
-                attrs: {
-                  xmlns: "http://www.w3.org/2000/svg",
-                  width: "13.389",
-                  height: "7.865",
-                  viewBox: "0 0 13.389 7.865"
-                }
-              },
-              [
-                _c(
-                  "g",
-                  { attrs: { transform: "translate(0 7.865) rotate(-90)" } },
-                  [
-                    _c("g", { attrs: { transform: "translate(0 0)" } }, [
-                      _c("path", {
-                        attrs: {
-                          d:
-                            "M104.123,6.7l5.009-5.009a.734.734,0,0,0,0-1.036l-.439-.439a.734.734,0,0,0-1.036,0l-5.964,5.964a.739.739,0,0,0,0,1.039l5.958,5.958a.734.734,0,0,0,1.036,0l.439-.439a.733.733,0,0,0,0-1.036Z",
-                          transform: "translate(-101.48 0)",
-                          fill: "#fff"
-                        }
-                      })
-                    ])
-                  ]
-                )
-              ]
-            )
-          ])
+          _c(
+            "span",
+            {
+              staticClass: "ml-3 -mt-2 relative",
+              staticStyle: { bottom: "1px" }
+            },
+            [
+              _c(
+                "svg",
+                {
+                  staticClass: "w-3 text-white fill-current",
+                  attrs: {
+                    role: "img",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 320 512"
+                  }
+                },
+                [
+                  _c("path", {
+                    attrs: {
+                      fill: "currentColor",
+                      d:
+                        "M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41z"
+                    }
+                  })
+                ]
+              )
+            ]
+          )
         ]
       ),
       _vm._v(" "),
@@ -27136,15 +27524,17 @@ var render = function() {
         "div",
         {
           staticClass:
-            "float-none absolute right-0 tw-dropdown-language shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-2",
-          class: _vm.open ? "block" : "hidden"
+            "transform transition-all duration-300 ease-in-out absolute right-0 tw-dropdown-language shadow-btn-hover bg-white list-none text-left min-w-10rem py-2 mt-1",
+          class: _vm.open
+            ? "visible translate-y-16 opacity-100"
+            : "translate-y-14 opacity-0 invisible"
         },
         [
           _c(
             "a",
             {
               staticClass:
-                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none",
               attrs: { href: "#" }
             },
             [_vm._v("普通话")]
@@ -27154,17 +27544,40 @@ var render = function() {
             "a",
             {
               staticClass:
-                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                "flex items-center justify-between w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none",
               attrs: { href: "#" }
             },
-            [_vm._v("English")]
+            [
+              _c("span", [_vm._v("English")]),
+              _vm._v(" "),
+              _c(
+                "svg",
+                {
+                  staticClass: "w-3 text-primary fill-current",
+                  attrs: {
+                    role: "img",
+                    xmlns: "http://www.w3.org/2000/svg",
+                    viewBox: "0 0 512 512"
+                  }
+                },
+                [
+                  _c("path", {
+                    attrs: {
+                      fill: "currentColor",
+                      d:
+                        "M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                    }
+                  })
+                ]
+              )
+            ]
           ),
           _vm._v(" "),
           _c(
             "a",
             {
               staticClass:
-                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none",
               attrs: { href: "#" }
             },
             [_vm._v("Spanish")]
@@ -27174,7 +27587,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none",
               attrs: { href: "#" }
             },
             [_vm._v("French")]
@@ -27184,7 +27597,7 @@ var render = function() {
             "a",
             {
               staticClass:
-                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-600 hover:bg-gray-200 capitalize border-none",
               attrs: { href: "#" }
             },
             [_vm._v("German")]
@@ -27275,7 +27688,7 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "block ml-2 bg-gray-200 text-xs font-gotham-rounded text-primary rounded-sm px-2"
+                        "block ml-2 bg-gray-200 text-xs  text-primary rounded-sm px-2"
                     },
                     [_vm._v("\n              Highest Rated\n            ")]
                   )
@@ -27306,10 +27719,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "p",
-            {
-              staticClass:
-                "mt-5 text-sm text-gray-900 font-gotham-rounded-book font-light leading-5"
-            },
+            { staticClass: "mt-5 text-sm text-gray-900  font-light leading-5" },
             [
               _vm._v(
                 "\n        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique beatae quisquam id necessitatibus nulla? Laboriosam maxime numquam nostrum cum laudantium distinctio nobis velit voluptatum quasi inventore, nisi exercitationem voluptatibus dolorum?\n      "
@@ -27438,7 +27848,7 @@ var render = function() {
                     "vue-circle",
                     {
                       staticClass:
-                        "flex text-sm text-gray-700 font-gotham-rounded-book font-light leading-4",
+                        "flex text-sm text-gray-700  font-light leading-4",
                       attrs: {
                         progress: 75,
                         scale: 100,
@@ -27546,8 +27956,7 @@ var staticRenderFns = [
       _c(
         "a",
         {
-          staticClass:
-            "text-primary font-gotham-rounded text-sm mt-2 hover:underline",
+          staticClass: "text-primary  text-sm mt-2 hover:underline",
           attrs: { href: "javascript:void;" }
         },
         [_vm._v("more")]
@@ -27559,14 +27968,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex items-center justify-center" }, [
-      _c(
-        "strong",
-        {
-          staticClass:
-            "font-gotham-rounded pt-5 text-sm text-gray-800 font-medium"
-        },
-        [_vm._v("$20 - $40")]
-      )
+      _c("strong", { staticClass: " pt-5 text-sm text-gray-800 font-medium" }, [
+        _vm._v("$20 - $40")
+      ])
     ])
   },
   function() {
@@ -27574,14 +27978,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex items-center justify-center" }, [
-      _c(
-        "span",
-        {
-          staticClass:
-            "pt-2 text-sm text-gray-700 font-gotham-rounded-book font-light"
-        },
-        [_vm._v("Hourly Rate")]
-      )
+      _c("span", { staticClass: "pt-2 text-sm text-gray-700  font-light" }, [
+        _vm._v("Hourly Rate")
+      ])
     ])
   }
 ]
@@ -27801,14 +28200,9 @@ var render = function() {
         },
         [
           _c("div", { staticClass: "flex flex-col md:w-12/12 lg:w-9/12" }, [
-            _c(
-              "h4",
-              {
-                staticClass:
-                  "font-gotham-rounded text-gray-900 text-base font-medium"
-              },
-              [_vm._v("\n        " + _vm._s(_vm.job.title) + "\n      ")]
-            ),
+            _c("h4", { staticClass: " text-gray-900 text-base font-medium" }, [
+              _vm._v("\n        " + _vm._s(_vm.job.title) + "\n      ")
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "flex flex-wrap items-center" }, [
               _c(
@@ -28100,8 +28494,7 @@ var render = function() {
             _c(
               "p",
               {
-                staticClass:
-                  "mt-5 text-sm text-gray-900 font-gotham-rounded-book font-light leading-5"
+                staticClass: "mt-5 text-sm text-gray-900  font-light leading-5"
               },
               [_vm._v("\n        " + _vm._s(_vm.job.description) + "\n      ")]
             ),
@@ -28127,10 +28520,7 @@ var render = function() {
               _c("div", { staticClass: "flex items-baseline mr-4 mt-5" }, [
                 _c(
                   "h4",
-                  {
-                    staticClass:
-                      "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
-                  },
+                  { staticClass: " text-gray-800 text-sm font-medium pr-1" },
                   [_vm._v("\n            Bids:\n          ")]
                 ),
                 _vm._v(" "),
@@ -28144,10 +28534,7 @@ var render = function() {
               _c("div", { staticClass: "flex items-baseline mr-4 mt-5" }, [
                 _c(
                   "h4",
-                  {
-                    staticClass:
-                      "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
-                  },
+                  { staticClass: " text-gray-800 text-sm font-medium pr-1" },
                   [_vm._v("\n            Delivery:\n          ")]
                 ),
                 _vm._v(" "),
@@ -28161,10 +28548,7 @@ var render = function() {
               _c("div", { staticClass: "flex items-baseline mr-4 mt-5" }, [
                 _c(
                   "h4",
-                  {
-                    staticClass:
-                      "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
-                  },
+                  { staticClass: " text-gray-800 text-sm font-medium pr-1" },
                   [_vm._v("\n            Availibility:\n          ")]
                 ),
                 _vm._v(" "),
@@ -28180,10 +28564,7 @@ var render = function() {
               _c("div", { staticClass: "flex items-center mr-4 mt-5" }, [
                 _c(
                   "h4",
-                  {
-                    staticClass:
-                      "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
-                  },
+                  { staticClass: " text-gray-800 text-sm font-medium pr-1" },
                   [_vm._v("\n            Reviews:\n          ")]
                 ),
                 _vm._v(" "),
@@ -28330,10 +28711,7 @@ var render = function() {
                 _c("div", { staticClass: "flex items-center justify-center" }, [
                   _c(
                     "strong",
-                    {
-                      staticClass:
-                        "font-gotham-rounded pt-5 text-sm text-gray-800 font-medium"
-                    },
+                    { staticClass: " pt-5 text-sm text-gray-800 font-medium" },
                     [_vm._v("$" + _vm._s(_vm.job.amount))]
                   )
                 ]),
@@ -28341,10 +28719,7 @@ var render = function() {
                 _c("div", { staticClass: "flex items-center justify-center" }, [
                   _c(
                     "span",
-                    {
-                      staticClass:
-                        "pt-2 text-sm text-gray-700 font-gotham-rounded-book font-light"
-                    },
+                    { staticClass: "pt-2 text-sm text-gray-700  font-light" },
                     [_vm._v(_vm._s(_vm.job.payment_type))]
                   )
                 ]),
@@ -28359,7 +28734,7 @@ var render = function() {
                       "vue-circle",
                       {
                         staticClass:
-                          "flex text-sm text-gray-700 font-gotham-rounded-book font-light leading-4",
+                          "flex text-sm text-gray-700  font-light leading-4",
                         attrs: {
                           progress: _vm.job.hire_rating,
                           scale: 100,
@@ -28408,7 +28783,7 @@ var render = function() {
               "h5",
               {
                 staticClass:
-                  "card-header card-header-custom flex items-center justify-between font-gotham-rounded-book text-gray-900 text-lg font-medium py-6 bg-white"
+                  "card-header card-header-custom flex items-center justify-between  text-gray-900 text-lg font-medium py-6 bg-white"
               },
               [
                 _vm._v("\n        " + _vm._s(_vm.job.title) + "\n        "),
@@ -28464,7 +28839,7 @@ var render = function() {
                           "h2",
                           {
                             staticClass:
-                              "font-gotham-rounded-book text-gray-800 text-lg lg:text-xl font-semibold leading-6"
+                              " text-gray-800 text-lg lg:text-xl font-semibold leading-6"
                           },
                           [
                             _vm._v(
@@ -28484,7 +28859,7 @@ var render = function() {
                           "h5",
                           {
                             staticClass:
-                              "font-gotham-rounded text-gray-800 text-sm font-normal md:-mb-2 lg:mb-0 lg:mt-10"
+                              " text-gray-800 text-sm font-normal md:-mb-2 lg:mb-0 lg:mt-10"
                           },
                           [
                             _vm._v(
@@ -28510,7 +28885,7 @@ var render = function() {
                                   "h4",
                                   {
                                     staticClass:
-                                      "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
+                                      " text-gray-800 text-sm font-medium pr-1"
                                   },
                                   [
                                     _vm._v(
@@ -28560,7 +28935,7 @@ var render = function() {
                                   "h4",
                                   {
                                     staticClass:
-                                      "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
+                                      " text-gray-800 text-sm font-medium pr-1"
                                   },
                                   [
                                     _vm._v(
@@ -28700,7 +29075,7 @@ var render = function() {
                             "h5",
                             {
                               staticClass:
-                                "hidden lg:block font-gotham-rounded-book text-gray-800 text-base font-light mb-4"
+                                "hidden lg:block  text-gray-800 text-base font-light mb-4"
                             },
                             [
                               _vm._v(
@@ -28713,7 +29088,7 @@ var render = function() {
                             "h5",
                             {
                               staticClass:
-                                "block lg:hidden font-gotham-rounded text-gray-800 text-sm font-normal mb-4"
+                                "block lg:hidden  text-gray-800 text-sm font-normal mb-4"
                             },
                             [
                               _vm._v(
@@ -28725,8 +29100,7 @@ var render = function() {
                           _c(
                             "strong",
                             {
-                              staticClass:
-                                "text-lg text-gray-800 font-gotham-rounded-book font-medium"
+                              staticClass: "text-lg text-gray-800  font-medium"
                             },
                             [_vm._v("$2,500 - $3,500")]
                           )
@@ -28763,7 +29137,7 @@ var render = function() {
                               "h5",
                               {
                                 staticClass:
-                                  "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                                  "card-header card-header-custom  text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                               },
                               [
                                 _vm._v(
@@ -28782,7 +29156,7 @@ var render = function() {
                                   "h4",
                                   {
                                     staticClass:
-                                      "mt-2 font-gotham-rounded text-gray-700 text-sm font-medium py-4"
+                                      "mt-2  text-gray-700 text-sm font-medium py-4"
                                   },
                                   [
                                     _vm._v(
@@ -28795,7 +29169,7 @@ var render = function() {
                                   "p",
                                   {
                                     staticClass:
-                                      "mt-2 text-sm text-gray-900 font-gotham-rounded-book font-light pb-4 leading-5"
+                                      "mt-2 text-sm text-gray-900  font-light pb-4 leading-5"
                                   },
                                   [
                                     _vm._v(
@@ -28818,7 +29192,7 @@ var render = function() {
                                   "h4",
                                   {
                                     staticClass:
-                                      "mt-2 font-gotham-rounded text-gray-700 text-sm font-medium pb-4"
+                                      "mt-2  text-gray-700 text-sm font-medium pb-4"
                                   },
                                   [
                                     _vm._v(
@@ -28866,7 +29240,7 @@ var render = function() {
                                           "a",
                                           {
                                             staticClass:
-                                              "block font-gotham-rounded font-medium text-link text-primary hover:underline pl-2",
+                                              "block  font-medium text-link text-primary hover:underline pl-2",
                                             attrs: { href: "#" }
                                           },
                                           [
@@ -28910,7 +29284,7 @@ var render = function() {
                                           "a",
                                           {
                                             staticClass:
-                                              "block font-gotham-rounded font-medium text-link text-primary hover:underline pl-2",
+                                              "block  font-medium text-link text-primary hover:underline pl-2",
                                             attrs: { href: "#" }
                                           },
                                           [
@@ -28938,7 +29312,7 @@ var render = function() {
                                   "h4",
                                   {
                                     staticClass:
-                                      "mt-2 font-gotham-rounded text-gray-700 text-sm font-medium pb-4"
+                                      "mt-2  text-gray-700 text-sm font-medium pb-4"
                                   },
                                   [
                                     _vm._v(
@@ -28993,7 +29367,7 @@ var render = function() {
                               "h5",
                               {
                                 staticClass:
-                                  "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                                  "card-header card-header-custom  text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                               },
                               [
                                 _vm._v(
@@ -29072,7 +29446,7 @@ var render = function() {
                                                       "h5",
                                                       {
                                                         staticClass:
-                                                          "font-gotham-book text-link text-gray-800 font-semibold"
+                                                          "font-gotham text-link text-gray-800 font-semibold"
                                                       },
                                                       [_vm._v("Melinda Gates")]
                                                     ),
@@ -29128,7 +29502,7 @@ var render = function() {
                                               "strong",
                                               {
                                                 staticClass:
-                                                  "text-link text-gray-800 font-gotham-rounded font-medium pb-2"
+                                                  "text-link text-gray-800  font-medium pb-2"
                                               },
                                               [_vm._v("$40,00")]
                                             ),
@@ -29207,7 +29581,7 @@ var render = function() {
                                                       "h5",
                                                       {
                                                         staticClass:
-                                                          "font-gotham-book text-link text-gray-800 font-semibold"
+                                                          "font-gotham text-link text-gray-800 font-semibold"
                                                       },
                                                       [_vm._v("Melinda Gates")]
                                                     ),
@@ -29263,7 +29637,7 @@ var render = function() {
                                               "strong",
                                               {
                                                 staticClass:
-                                                  "text-link text-gray-800 font-gotham-rounded font-medium pb-2"
+                                                  "text-link text-gray-800  font-medium pb-2"
                                               },
                                               [_vm._v("$40,00")]
                                             ),
@@ -29298,7 +29672,7 @@ var render = function() {
                               "h5",
                               {
                                 staticClass:
-                                  "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                                  "card-header card-header-custom  text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                               },
                               [
                                 _vm._v(
@@ -29329,7 +29703,7 @@ var render = function() {
                                           "strong",
                                           {
                                             staticClass:
-                                              "font-gotham-book text-sm text-gray-900 font-semibold leading-5 mr-2"
+                                              "font-gotham text-sm text-gray-900 font-semibold leading-5 mr-2"
                                           },
                                           [
                                             _vm._v(
@@ -29402,7 +29776,7 @@ var render = function() {
                                       "p",
                                       {
                                         staticClass:
-                                          "mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5"
+                                          "mt-4 text-sm flex items-start text-gray-900  font-light leading-5"
                                       },
                                       [
                                         _c("read-more", {
@@ -29439,7 +29813,7 @@ var render = function() {
                                           "strong",
                                           {
                                             staticClass:
-                                              "font-gotham-book text-sm text-gray-900 font-semibold leading-5 mr-2"
+                                              "font-gotham text-sm text-gray-900 font-semibold leading-5 mr-2"
                                           },
                                           [
                                             _vm._v(
@@ -29512,7 +29886,7 @@ var render = function() {
                                       "p",
                                       {
                                         staticClass:
-                                          "mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5"
+                                          "mt-4 text-sm flex items-start text-gray-900  font-light leading-5"
                                       },
                                       [
                                         _c("read-more", {
@@ -29543,7 +29917,7 @@ var render = function() {
                             "button",
                             {
                               staticClass:
-                                "w-full bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
+                                "w-full bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0  font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
                             },
                             [
                               _vm._v(
@@ -29556,7 +29930,7 @@ var render = function() {
                             "button",
                             {
                               staticClass:
-                                "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
+                                "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4  font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
                             },
                             [
                               _c(
@@ -29635,7 +30009,7 @@ var render = function() {
                             "button",
                             {
                               staticClass:
-                                "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
+                                "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4  font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
                             },
                             [
                               _c(
@@ -29685,7 +30059,7 @@ var render = function() {
                               "strong",
                               {
                                 staticClass:
-                                  "font-gotham-book text-sm text-gray-700 font-semibold"
+                                  "font-gotham text-sm text-gray-700 font-semibold"
                               },
                               [_vm._v("Posted at:")]
                             ),
@@ -29702,7 +30076,7 @@ var render = function() {
                               "strong",
                               {
                                 staticClass:
-                                  "font-gotham-book text-sm text-gray-700 font-semibold"
+                                  "font-gotham text-sm text-gray-700 font-semibold"
                               },
                               [_vm._v("English Level:")]
                             ),
@@ -29749,7 +30123,7 @@ var render = function() {
                               "strong",
                               {
                                 staticClass:
-                                  "font-gotham-book text-sm text-gray-700 font-semibold"
+                                  "font-gotham text-sm text-gray-700 font-semibold"
                               },
                               [_vm._v("Time in New York:")]
                             ),
@@ -29766,7 +30140,7 @@ var render = function() {
                               "strong",
                               {
                                 staticClass:
-                                  "font-gotham-book text-sm text-gray-700 font-semibold"
+                                  "font-gotham text-sm text-gray-700 font-semibold"
                               },
                               [_vm._v("Interviewing:")]
                             ),
@@ -29783,7 +30157,7 @@ var render = function() {
                               "strong",
                               {
                                 staticClass:
-                                  "font-gotham-book text-sm text-gray-700 font-semibold"
+                                  "font-gotham text-sm text-gray-700 font-semibold"
                               },
                               [_vm._v("Bids:")]
                             ),
@@ -29805,7 +30179,7 @@ var render = function() {
                             "strong",
                             {
                               staticClass:
-                                "font-gotham-book text-sm text-gray-700 font-semibold"
+                                "font-gotham text-sm text-gray-700 font-semibold"
                             },
                             [_vm._v("Request Link")]
                           ),
@@ -29875,7 +30249,7 @@ var render = function() {
                             "strong",
                             {
                               staticClass:
-                                "font-gotham-book text-sm text-gray-700 font-semibold"
+                                "font-gotham text-sm text-gray-700 font-semibold"
                             },
                             [_vm._v("Share")]
                           ),
@@ -30097,8 +30471,10 @@ var render = function() {
         "div",
         {
           staticClass:
-            "w-full lg:w-300px lg:flex-1 lg:absolute lg:right-0 mt-2 -mb-2 lg:mt-4 lg:py-2 bg-white rounded-none lg:shadow-dropdown block tw-account-dropdown",
-          class: _vm.open ? "lg:block" : "lg:hidden"
+            "lg:transform lg:translate-x-5 lg:transition-all lg:duration-300 lg:ease-in-out w-full lg:w-300px lg:flex-1 lg:absolute lg:right-0 mt-2 -mb-2 lg:mt-4 lg:py-2 bg-white rounded-none lg:shadow-dropdown block tw-account-dropdown",
+          class: _vm.open
+            ? "lg:visible lg:translate-y-0 lg:opacity-100"
+            : "lg:-translate-y-1 lg:opacity-0 lg:invisible"
         },
         [
           _vm._m(0),
@@ -30198,10 +30574,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "span",
-                {
-                  staticClass:
-                    "pl-3 font-gotham-rounded text-sm text-gray-600 font-medium"
-                },
+                { staticClass: "pl-3  text-sm text-gray-600 font-medium" },
                 [_vm._v("Settings")]
               )
             ]
@@ -30245,10 +30618,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "span",
-                {
-                  staticClass:
-                    "pl-3 font-gotham-rounded text-sm text-gray-600 font-medium"
-                },
+                { staticClass: "pl-3  text-sm text-gray-600 font-medium" },
                 [_vm._v("Support")]
               )
             ]
@@ -30292,10 +30662,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "span",
-                {
-                  staticClass:
-                    "pl-3 font-gotham-rounded text-sm text-gray-600 font-medium"
-                },
+                { staticClass: "pl-3  text-sm text-gray-600 font-medium" },
                 [_vm._v("Community")]
               )
             ]
@@ -30352,10 +30719,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "span",
-                {
-                  staticClass:
-                    "pl-3 font-gotham-rounded text-sm text-gray-600 font-medium"
-                },
+                { staticClass: "pl-3  text-sm text-gray-600 font-medium" },
                 [_vm._v("Logout")]
               )
             ]
@@ -30388,7 +30752,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "block px-1 lg:px-4 py-2 hover:bg-gray-200 cursor-pointer lg:mx-2 rounded-none flex justify-start items-center transition ease-in-out duration-300"
+          "px-1 lg:px-4 py-2 hover:bg-gray-200 cursor-pointer lg:mx-2 rounded-none flex justify-start items-center transition ease-in-out duration-300"
       },
       [
         _c(
@@ -30420,15 +30784,16 @@ var staticRenderFns = [
               "span",
               {
                 staticClass:
-                  "select-none antialiased font-gotham-rounded text-link text-gray-700 font-normal",
-                staticStyle: { "font-size": "14px" }
+                  "select-none antialiased text-base text-gray-600 font-light"
               },
               [_vm._v("Melinda Gates")]
             ),
             _vm._v(" "),
-            _c("span", { staticClass: "select-none text-gray-500 text-sm" }, [
-              _vm._v("Graphic Designer")
-            ])
+            _c(
+              "span",
+              { staticClass: "select-none text-gray-500 text-sm font-medium" },
+              [_vm._v("Graphic Designer")]
+            )
           ]
         )
       ]
@@ -30459,8 +30824,7 @@ var render = function() {
   return _c(
     "li",
     {
-      staticClass:
-        "lg:z-20 font-gotham-rounded uppercase border-b lg:border-none border-gray-200 relative",
+      staticClass: "lg:z-20 border-b lg:border-none border-gray-200 relative",
       on: {
         mouseover: function($event) {
           _vm.open = true
@@ -30476,11 +30840,11 @@ var render = function() {
           "a",
           {
             staticClass:
-              "block lg:inline-block text-gray-600 text-link px-0 lg:px-4 py-4 dropdown-toggle",
+              "block lg:inline-block text-gray-500 text-base font-medium px-0 lg:px-4 py-4 dropdown-toggle",
             class: _vm.open || _vm.active ? "text-primary" : "",
             attrs: { href: _vm.link }
           },
-          [_vm._v("\n        " + _vm._s(_vm.name) + "\n      ")]
+          [_vm._v("\n      " + _vm._s(_vm.name) + "\n    ")]
         ),
         _vm._v(" "),
         _c(
@@ -30516,20 +30880,20 @@ var render = function() {
       _c(
         "div",
         { staticClass: "hidden lg:block absolute w-full z-10 cursor-pointer" },
-        [_vm._v("\n \n    ")]
+        [_vm._v("\n     \n  ")]
       ),
       _vm._v(" "),
       _c(
         "div",
         {
           staticClass:
-            "lg:hidden static float-none lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-2 lg:mt-12 -mt-4"
+            "lg:hidden static lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-2 lg:mt-12 -mt-4"
         },
         [
           _c(
             "slide-up-down",
             {
-              staticClass: "w-full lg:flex lg:items-center lg:w-auto lg:hidden",
+              staticClass: "w-full lg:flex lg:items-center lg:w-auto",
               attrs: { active: _vm.open, duration: 300 }
             },
             [_vm._t("default")],
@@ -30543,7 +30907,7 @@ var render = function() {
         "div",
         {
           staticClass:
-            "hidden tw-dropdown-menu static float-none lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-3 lg:py-2 lg:mt-12 -mt-4",
+            "hidden tw-dropdown-menu static lg:absolute top-0 lg:shadow-dropdown bg-white list-none text-left float-left min-w-10rem py-3 lg:py-2 lg:mt-12 -mt-4",
           class: _vm.open ? "lg:block" : "lg:hidden"
         },
         [_vm._t("default")],
@@ -30659,7 +31023,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "select-none bg-primary absolute top-0 right-0 w-6 h-6 text-xxs font-semibold flex items-center justify-center text-center rounded-full text-white ml-4 -mt-2"
+                "select-none bg-primary absolute top-0 right-0 w-6 h-6 text-xxs font-bold flex items-center justify-center rounded-full text-white ml-4 -mt-2"
             },
             [_vm._v("\n    " + _vm._s(_vm.counter) + "\n  ")]
           )
@@ -30752,7 +31116,7 @@ var render = function() {
                 "h5",
                 {
                   staticClass:
-                    "card-header card-header-custom cursor-default p-0 flex items-center justify-between font-gotham-rounded-book text-gray-900 text-lg font-medium bg-white"
+                    "card-header card-header-custom cursor-default p-0 flex items-center justify-between  text-gray-900 text-lg font-medium bg-white"
                 },
                 [
                   _c("div", { staticClass: "flex h-full px-4" }, [
@@ -30952,7 +31316,7 @@ var render = function() {
                     "h4",
                     {
                       staticClass:
-                        "pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal"
+                        "pt-10 pb-10 text-base uppercase font-semibold"
                     },
                     [_vm._v("\n          Follow Us\n        ")]
                   ),
@@ -30961,7 +31325,7 @@ var render = function() {
                     "ul",
                     {
                       staticClass:
-                        "block flex flex-wrap flex-col justify-between w-full m-0 p-0"
+                        "flex flex-wrap flex-col justify-between w-full m-0 p-0"
                     },
                     [
                       _c("li", { staticClass: "list-none py-3" }, [
@@ -30969,7 +31333,7 @@ var render = function() {
                           "a",
                           {
                             staticClass:
-                              "flex justify-start items-center font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                              "flex justify-start items-center font-normal hover:underline",
                             attrs: { href: "#" }
                           },
                           [
@@ -31024,7 +31388,7 @@ var render = function() {
                           "a",
                           {
                             staticClass:
-                              "flex justify-start items-center font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                              "flex justify-start items-center font-normal hover:underline",
                             attrs: { href: "#" }
                           },
                           [
@@ -31060,7 +31424,7 @@ var render = function() {
                           "a",
                           {
                             staticClass:
-                              "flex justify-start items-center font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                              "flex justify-start items-center font-normal hover:underline",
                             attrs: { href: "#" }
                           },
                           [
@@ -31114,26 +31478,21 @@ var staticRenderFns = [
     return _c("div", { staticClass: "w-1/2 lg:w-1/4 flex flex-col mx-auto" }, [
       _c(
         "h4",
-        {
-          staticClass:
-            "pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal"
-        },
+        { staticClass: "pt-10 pb-10 text-base uppercase font-semibold" },
         [_vm._v("\n          About\n        ")]
       ),
       _vm._v(" "),
       _c(
         "ul",
         {
-          staticClass:
-            "block flex flex-wrap flex-col justify-between w-full m-0 p-0"
+          staticClass: "flex flex-wrap flex-col justify-between w-full m-0 p-0"
         },
         [
           _c("li", { staticClass: "list-none py-3" }, [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Blog")]
@@ -31144,8 +31503,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("About us")]
@@ -31156,8 +31514,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Terms of use")]
@@ -31174,26 +31531,21 @@ var staticRenderFns = [
     return _c("div", { staticClass: "w-1/2 lg:w-1/4 flex flex-col mx-auto" }, [
       _c(
         "h4",
-        {
-          staticClass:
-            "pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal"
-        },
+        { staticClass: "pt-10 pb-10 text-base uppercase font-semibold" },
         [_vm._v("\n          Resources\n        ")]
       ),
       _vm._v(" "),
       _c(
         "ul",
         {
-          staticClass:
-            "block flex flex-wrap flex-col justify-between w-full m-0 p-0"
+          staticClass: "flex flex-wrap flex-col justify-between w-full m-0 p-0"
         },
         [
           _c("li", { staticClass: "list-none py-3" }, [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Community")]
@@ -31204,8 +31556,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Privacy Policy")]
@@ -31216,8 +31567,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Help & Support")]
@@ -31234,26 +31584,21 @@ var staticRenderFns = [
     return _c("div", { staticClass: "w-1/2 lg:w-1/4 flex flex-col mx-auto" }, [
       _c(
         "h4",
-        {
-          staticClass:
-            "pt-10 pb-10 text-base uppercase font-gotham-rounded-book text-footer-title font-normal"
-        },
+        { staticClass: "pt-10 pb-10 text-base uppercase font-semibold" },
         [_vm._v("\n          Browser\n        ")]
       ),
       _vm._v(" "),
       _c(
         "ul",
         {
-          staticClass:
-            "block flex flex-wrap flex-col justify-between w-full m-0 p-0"
+          staticClass: "flex flex-wrap flex-col justify-between w-full m-0 p-0"
         },
         [
           _c("li", { staticClass: "list-none py-3" }, [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Top Freelancers")]
@@ -31264,8 +31609,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Freelancers in UK")]
@@ -31276,8 +31620,7 @@ var staticRenderFns = [
             _c(
               "a",
               {
-                staticClass:
-                  "font-gotham-rounded-book text-footer-link font-normal hover:underline",
+                staticClass: "font-normal hover:underline",
                 attrs: { href: "#" }
               },
               [_vm._v("Freelancers in USA")]
@@ -31295,7 +31638,7 @@ var staticRenderFns = [
       "div",
       { staticClass: "w-full flex justify-center text-center py-10" },
       [
-        _c("span", { staticClass: "text-sm text-white" }, [
+        _c("span", { staticClass: "text-base text-white" }, [
           _vm._v("© 2020 Twiworker.")
         ])
       ]
@@ -31394,8 +31737,7 @@ var render = function() {
             ? _c(
                 "slide-up-down",
                 {
-                  staticClass:
-                    "w-full lg:flex lg:items-center lg:w-auto lg:hidden",
+                  staticClass: "w-full lg:hidden lg:items-center lg:w-auto",
                   attrs: { active: _vm.open, duration: 300 }
                 },
                 [
@@ -31409,15 +31751,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 hover:text-primary font-medium text-base px-0 lg:px-4 py-4",
                               class: { "text-primary": _vm.loginRouteActive },
                               attrs: { href: _vm.loginRoute }
                             },
@@ -31429,15 +31770,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 hover:text-primary font-medium text-base px-0 lg:px-4 py-4",
                               class: {
                                 "text-primary": _vm.registerRouteActive
                               },
@@ -31448,24 +31788,17 @@ var render = function() {
                         ]
                       ),
                       _vm._v(" "),
-                      _c(
-                        "li",
-                        {
-                          staticClass:
-                            "font-gotham-rounded uppercase lg:normal-case"
-                        },
-                        [
-                          _c(
-                            "a",
-                            {
-                              staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal",
-                              attrs: { href: "#" }
-                            },
-                            [_vm._v("Post a Job")]
-                          )
-                        ]
-                      )
+                      _c("li", { staticClass: "lg:normal-case" }, [
+                        _c(
+                          "a",
+                          {
+                            staticClass:
+                              "block lg:inline-block text-gray-500 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-base px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-medium",
+                            attrs: { href: "#" }
+                          },
+                          [_vm._v("Post a Job")]
+                        )
+                      ])
                     ]
                   )
                 ]
@@ -31476,8 +31809,7 @@ var render = function() {
             ? _c(
                 "slide-up-down",
                 {
-                  staticClass:
-                    "w-full lg:flex lg:items-center lg:w-auto lg:hidden",
+                  staticClass: "w-full lg:items-center lg:w-auto lg:hidden",
                   attrs: { active: _vm.open, duration: 300 }
                 },
                 [
@@ -31496,7 +31828,7 @@ var render = function() {
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: "#" }
                             },
                             [_vm._v("News Feed")]
@@ -31506,7 +31838,7 @@ var render = function() {
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: "#" }
                             },
                             [_vm._v("Search Job")]
@@ -31516,7 +31848,7 @@ var render = function() {
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: "#" }
                             },
                             [_vm._v("My biddings")]
@@ -31526,7 +31858,7 @@ var render = function() {
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: "#" }
                             },
                             [_vm._v("My Contracts")]
@@ -31537,15 +31869,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4",
                               attrs: { href: "#" }
                             },
                             [_vm._v("Freelancers")]
@@ -31556,15 +31887,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4",
                               attrs: { href: "#" }
                             },
                             [_vm._v("Profile")]
@@ -31575,15 +31905,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4",
                               attrs: { href: "#" }
                             },
                             [_vm._v("Reports")]
@@ -31651,13 +31980,18 @@ var render = function() {
                     [
                       _c(
                         "DropdownMenu",
-                        { attrs: { name: "Jobs", link: "#" } },
+                        {
+                          attrs: {
+                            name: "Find Jobs",
+                            link: _vm.route("jobs.index")
+                          }
+                        },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: _vm.route("jobs.index") }
                             },
                             [_vm._v("\n            News Feed\n          ")]
@@ -31667,7 +32001,7 @@ var render = function() {
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: "#" }
                             },
                             [_vm._v("Search Job")]
@@ -31677,7 +32011,7 @@ var render = function() {
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: "#" }
                             },
                             [_vm._v("My biddings")]
@@ -31687,7 +32021,7 @@ var render = function() {
                             "a",
                             {
                               staticClass:
-                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent font-gotham-rounded-book text-gray-700 hover:bg-gray-200 capitalize border-none",
+                                "block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none",
                               attrs: { href: "#" }
                             },
                             [_vm._v("My Contracts")]
@@ -31698,15 +32032,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4",
                               attrs: { href: _vm.route("freelancers.index") }
                             },
                             [_vm._v("Freelancers")]
@@ -31742,15 +32075,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 hover:text-primary text-base font-medium px-0 lg:px-4 py-4",
                               class: { "text-primary": _vm.loginRouteActive },
                               attrs: { href: _vm.loginRoute }
                             },
@@ -31762,15 +32094,14 @@ var render = function() {
                       _c(
                         "li",
                         {
-                          staticClass:
-                            "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
+                          staticClass: "border-b lg:border-none border-gray-200"
                         },
                         [
                           _c(
                             "a",
                             {
                               staticClass:
-                                "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+                                "block lg:inline-block text-gray-500 hover:text-primary text-base font-medium px-0 lg:px-4 py-4",
                               class: {
                                 "text-primary": _vm.registerRouteActive
                               },
@@ -31851,16 +32182,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "li",
-      {
-        staticClass:
-          "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
-      },
+      { staticClass: "border-b lg:border-none border-gray-200" },
       [
         _c(
           "a",
           {
             staticClass:
-              "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+              "block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4",
             attrs: { href: "#" }
           },
           [_vm._v("Profile")]
@@ -31874,16 +32202,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "li",
-      {
-        staticClass:
-          "font-gotham-rounded uppercase border-b lg:border-none border-gray-200"
-      },
+      { staticClass: "border-b lg:border-none border-gray-200" },
       [
         _c(
           "a",
           {
             staticClass:
-              "block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4",
+              "block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4",
             attrs: { href: "#" }
           },
           [_vm._v("Reports")]
@@ -31895,21 +32220,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "li",
-      { staticClass: "font-gotham-rounded uppercase lg:normal-case" },
-      [
-        _c(
-          "a",
-          {
-            staticClass:
-              "block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 lg:hover:shadow-btn-hover trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal",
-            attrs: { href: "#" }
-          },
-          [_vm._v("Post a Job")]
-        )
-      ]
-    )
+    return _c("li", { staticClass: "lg:normal-case" }, [
+      _c(
+        "a",
+        {
+          staticClass:
+            "block transition duration-300 ease lg:inline-block text-gray-500 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-90 lg:hover:shadow-btn-hover lg:bg-primary lg:shadow-dropdown lg:text-white text-base px-0 lg:px-4 lg:py-2 py-4 lg:ml-4 font-medium",
+          attrs: { href: "#" }
+        },
+        [_vm._v("Post a Job")]
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -32128,19 +32449,14 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex justify-between items-center" }, [
-      _c(
-        "h4",
-        {
-          staticClass: "font-gotham-rounded text-gray-800 font-medium text-base"
-        },
-        [_vm._v("\n          Find Talents\n        ")]
-      ),
+      _c("h4", { staticClass: " text-gray-800 font-medium text-base" }, [
+        _vm._v("\n          Find Talents\n        ")
+      ]),
       _vm._v(" "),
       _c(
         "a",
         {
-          staticClass:
-            "font-gotham-rounded font-medium text-xs text-primary hover:underline",
+          staticClass: "font-medium text-xs text-primary hover:underline",
           attrs: { href: "javascript:void;" }
         },
         [_vm._v("CLEAR ALL")]
@@ -32178,14 +32494,9 @@ var render = function() {
     [
       _c("div", { staticClass: "flex flex-wrap w-full my-12" }, [
         _c("div", { staticClass: "w-full lg:w-3/12" }, [
-          _c(
-            "h4",
-            {
-              staticClass:
-                "font-gotham-rounded text-gray-800 font-medium text-xl"
-            },
-            [_vm._v("\n        News Feed\n      ")]
-          ),
+          _c("h4", { staticClass: " text-gray-800 font-medium text-xl" }, [
+            _vm._v("\n        News Feed\n      ")
+          ]),
           _vm._v(" "),
           _vm._m(0),
           _vm._v(" "),
@@ -32195,8 +32506,7 @@ var render = function() {
             _c(
               "h5",
               {
-                staticClass:
-                  "font-gotham-rounded text-gray-800 text-base font-normal mt-10 mb-2"
+                staticClass: " text-gray-800 text-base font-normal mt-10 mb-2"
               },
               [_vm._v("\n          My Filters\n        ")]
             ),
@@ -32208,11 +32518,9 @@ var render = function() {
                   "my-4 bg-white w-full py-2 px-6 shadow-dropdown flex justify-between items-center"
               },
               [
-                _c(
-                  "span",
-                  { staticClass: "font-gotham-rounded text-sm text-gray-600" },
-                  [_vm._v("News Feed")]
-                ),
+                _c("span", { staticClass: " text-sm text-gray-600" }, [
+                  _vm._v("News Feed")
+                ]),
                 _vm._v(" "),
                 _c(
                   "svg",
@@ -32362,14 +32670,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex flex-col mt-10" }, [
-      _c(
-        "h5",
-        {
-          staticClass:
-            "font-gotham-rounded text-gray-900 text-base font-normal mb-4"
-        },
-        [_vm._v("\n          Shortcuts\n        ")]
-      ),
+      _c("h5", { staticClass: " text-gray-900 text-base font-normal mb-4" }, [
+        _vm._v("\n          Shortcuts\n        ")
+      ]),
       _vm._v(" "),
       _c(
         "a",
@@ -32449,10 +32752,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "flex flex-col mb-10" }, [
       _c(
         "h5",
-        {
-          staticClass:
-            "font-gotham-rounded text-gray-800 text-base font-normal mt-10 mb-4"
-        },
+        { staticClass: " text-gray-800 text-base font-normal mt-10 mb-4" },
         [_vm._v("\n          Summary\n        ")]
       ),
       _vm._v(" "),
@@ -32460,7 +32760,7 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "flex justify-between items-cemter mt-2 mt-0 px-4 py-3 font-gotham-rounded-book text-sm font-normal text-gray-600 bg-message bg-opacity-20 border-b border-message"
+            "flex justify-between items-cemter mt-2 mt-0 px-4 py-3  text-sm font-normal text-gray-600 bg-message bg-opacity-20 border-b border-message"
         },
         [
           _c("div", [
@@ -32483,7 +32783,7 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "flex justify-between items-cemter mt-0 px-4 py-3 font-gotham-rounded-book text-sm font-normal text-gray-600 border-b border-message"
+            "flex justify-between items-cemter mt-0 px-4 py-3  text-sm font-normal text-gray-600 border-b border-message"
         },
         [
           _c("div", [
@@ -32506,7 +32806,7 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "flex justify-between items-cemter mt-0 px-4 py-3 font-gotham-rounded-book text-sm font-normal text-gray-600 bg-message bg-opacity-20"
+            "flex justify-between items-cemter mt-0 px-4 py-3  text-sm font-normal text-gray-600 bg-message bg-opacity-20"
         },
         [
           _c("div", [
@@ -32531,14 +32831,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "flex flex-col mb-10" }, [
-      _c(
-        "h5",
-        {
-          staticClass:
-            "font-gotham-rounded text-gray-800 text-base font-normal mb-6"
-        },
-        [_vm._v("\n          Messages\n        ")]
-      ),
+      _c("h5", { staticClass: " text-gray-800 text-base font-normal mb-6" }, [
+        _vm._v("\n          Messages\n        ")
+      ]),
       _vm._v(" "),
       _c(
         "div",
@@ -32822,14 +33117,9 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "flex flex-col mt-10" }, [
-        _c(
-          "h5",
-          {
-            staticClass:
-              "font-gotham-rounded text-gray-800 text-base font-normal mb-6"
-          },
-          [_vm._v("\n            Messages\n          ")]
-        ),
+        _c("h5", { staticClass: " text-gray-800 text-base font-normal mb-6" }, [
+          _vm._v("\n            Messages\n          ")
+        ]),
         _vm._v(" "),
         _c("span", { staticClass: "text-sm mb-2" }, [
           _vm._v("You do not have a message yet.")
@@ -32889,7 +33179,7 @@ var render = function() {
                 "h2",
                 {
                   staticClass:
-                    "font-gotham-rounded-book text-gray-800 text-lg lg:text-xl font-semibold leading-6"
+                    "text-gray-800 text-lg lg:text-xl font-semibold leading-6"
                 },
                 [_vm._v("\n          " + _vm._s(_vm.job.title) + "\n        ")]
               ),
@@ -32903,7 +33193,7 @@ var render = function() {
                 "h5",
                 {
                   staticClass:
-                    "font-gotham-rounded text-gray-800 text-sm font-normal md:-mb-2 lg:mb-0 lg:mt-10"
+                    "text-gray-800 text-sm font-normal md:-mb-2 lg:mb-0 lg:mt-10"
                 },
                 [_vm._v("\n          About the client\n        ")]
               ),
@@ -32919,8 +33209,7 @@ var render = function() {
                       _c(
                         "h4",
                         {
-                          staticClass:
-                            "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
+                          staticClass: "text-gray-800 text-sm font-medium pr-1"
                         },
                         [_vm._v("\n              Reviews:\n            ")]
                       ),
@@ -32962,8 +33251,7 @@ var render = function() {
                       _c(
                         "h4",
                         {
-                          staticClass:
-                            "font-gotham-rounded text-gray-800 text-sm font-medium pr-1"
+                          staticClass: "text-gray-800 text-sm font-medium pr-1"
                         },
                         [_vm._v("\n              Location:\n            ")]
                       ),
@@ -33096,7 +33384,7 @@ var render = function() {
                     "h5",
                     {
                       staticClass:
-                        "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                        "card-header card-header-custom text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                     },
                     [_vm._v("\n            Details\n          ")]
                   ),
@@ -33113,7 +33401,7 @@ var render = function() {
                         "h4",
                         {
                           staticClass:
-                            "mt-2 font-gotham-rounded text-gray-700 text-sm font-medium pb-4"
+                            "mt-2 text-gray-700 text-sm font-medium pb-4"
                         },
                         [_vm._v("\n              Attachment(s)\n            ")]
                       ),
@@ -33149,7 +33437,7 @@ var render = function() {
                               "a",
                               {
                                 staticClass:
-                                  "block font-gotham-rounded font-medium text-link text-primary hover:underline pl-2",
+                                  "block font-medium text-link text-primary hover:underline pl-2",
                                 attrs: { href: "#" }
                               },
                               [
@@ -33187,7 +33475,7 @@ var render = function() {
                               "a",
                               {
                                 staticClass:
-                                  "block font-gotham-rounded font-medium text-link text-primary hover:underline pl-2",
+                                  "block font-medium text-link text-primary hover:underline pl-2",
                                 attrs: { href: "#" }
                               },
                               [
@@ -33212,7 +33500,7 @@ var render = function() {
                         "h4",
                         {
                           staticClass:
-                            "mt-2 font-gotham-rounded text-gray-700 text-sm font-medium pb-4"
+                            "mt-2 text-gray-700 text-sm font-medium pb-4"
                         },
                         [
                           _vm._v(
@@ -33258,7 +33546,7 @@ var render = function() {
                     "h5",
                     {
                       staticClass:
-                        "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                        "card-header card-header-custom text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                     },
                     [
                       _vm._v(
@@ -33358,7 +33646,7 @@ var render = function() {
                     "h5",
                     {
                       staticClass:
-                        "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                        "card-header card-header-custom text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                     },
                     [_vm._v("\n            Feedbacks (2)\n          ")]
                   ),
@@ -33423,7 +33711,7 @@ var render = function() {
                           "p",
                           {
                             staticClass:
-                              "mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5"
+                              "mt-4 text-sm flex items-start text-gray-900 font-light leading-5"
                           },
                           [
                             _c("read-more", {
@@ -33497,7 +33785,7 @@ var render = function() {
                           "p",
                           {
                             staticClass:
-                              "mt-4 text-sm flex items-start text-gray-900 font-gotham-rounded-book font-light leading-5"
+                              "mt-4 text-sm flex items-start text-gray-900 font-light leading-5"
                           },
                           [
                             _c("read-more", {
@@ -33530,7 +33818,7 @@ var render = function() {
                     "button",
                     {
                       staticClass:
-                        "w-full bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
+                        "w-full bg-primary text-white text-center text-sm p-4 mt-8 lg:mt-0 font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
                     },
                     [_vm._v("\n            Apply Now\n          ")]
                   ),
@@ -33539,7 +33827,7 @@ var render = function() {
                     "button",
                     {
                       staticClass:
-                        "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
+                        "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
                     },
                     [
                       _c(
@@ -33617,7 +33905,7 @@ var render = function() {
                     "button",
                     {
                       staticClass:
-                        "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-gotham-rounded font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
+                        "flex items-center justify-start w-full bg-white text-gray-600 text-center text-sm p-2 mt-4 font-medium shadow-dropdown hover:shadow-btn-hover hover:text-opacity-75 focus:outline-none transition duration-300 ease-in-out"
                     },
                     [
                       _c(
@@ -33667,7 +33955,7 @@ var render = function() {
                       "strong",
                       {
                         staticClass:
-                          "font-gotham-book text-sm text-gray-700 font-semibold"
+                          "font-gotham text-sm text-gray-700 font-semibold"
                       },
                       [_vm._v("English Level:")]
                     ),
@@ -33721,7 +34009,7 @@ var render = function() {
                     "strong",
                     {
                       staticClass:
-                        "font-gotham-book text-sm text-gray-700 font-semibold"
+                        "font-gotham text-sm text-gray-700 font-semibold"
                     },
                     [_vm._v("Request Link")]
                   ),
@@ -33788,7 +34076,7 @@ var render = function() {
                     "strong",
                     {
                       staticClass:
-                        "font-gotham-book text-sm text-gray-700 font-semibold"
+                        "font-gotham text-sm text-gray-700 font-semibold"
                     },
                     [_vm._v("Share")]
                   ),
@@ -33955,7 +34243,7 @@ var staticRenderFns = [
           "h5",
           {
             staticClass:
-              "hidden lg:block font-gotham-rounded-book text-gray-800 text-base font-light mb-4"
+              "hidden lg:block text-gray-800 text-base font-light mb-4"
           },
           [_vm._v("\n          Hourly Rate\n        ")]
         ),
@@ -33964,19 +34252,14 @@ var staticRenderFns = [
           "h5",
           {
             staticClass:
-              "block lg:hidden font-gotham-rounded text-gray-800 text-sm font-normal mb-4"
+              "block lg:hidden text-gray-800 text-sm font-normal mb-4"
           },
           [_vm._v("\n          Hourly Rate\n        ")]
         ),
         _vm._v(" "),
-        _c(
-          "strong",
-          {
-            staticClass:
-              "text-lg text-gray-800 font-gotham-rounded-book font-medium"
-          },
-          [_vm._v("$2,500 - $3,500")]
-        )
+        _c("strong", { staticClass: "text-lg text-gray-800 font-medium" }, [
+          _vm._v("$2,500 - $3,500")
+        ])
       ]
     )
   },
@@ -33985,21 +34268,13 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-body container px-4 lg:px-5" }, [
-      _c(
-        "h4",
-        {
-          staticClass:
-            "mt-2 font-gotham-rounded text-gray-700 text-sm font-medium py-4"
-        },
-        [_vm._v("\n              Description\n            ")]
-      ),
+      _c("h4", { staticClass: "mt-2 text-gray-700 text-sm font-medium py-4" }, [
+        _vm._v("\n              Description\n            ")
+      ]),
       _vm._v(" "),
       _c(
         "p",
-        {
-          staticClass:
-            "mt-2 text-sm text-gray-900 font-gotham-rounded-book font-light pb-4 leading-5"
-        },
+        { staticClass: "mt-2 text-sm text-gray-900 font-light pb-4 leading-5" },
         [
           _vm._v(
             "\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aperiam temporibus, ipsa dolorum accusamus, impedit quod error quisquam illum earum vero at perspiciatis nulla voluptatum! Doloribus iste voluptatum itaque nulla?\n              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam aperiam temporibus, ipsa dolorum accusamus, impedit quod error quisquam illum earum vero at perspiciatis nulla voluptatum! Doloribus iste voluptatum itaque nulla?\n            "
@@ -34039,8 +34314,7 @@ var staticRenderFns = [
           _c(
             "h5",
             {
-              staticClass:
-                "font-gotham-book text-link text-gray-800 font-semibold"
+              staticClass: "font-gotham text-link text-gray-800 font-semibold"
             },
             [_vm._v("Melinda Gates")]
           ),
@@ -34059,10 +34333,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "flex flex-col items-center" }, [
       _c(
         "strong",
-        {
-          staticClass:
-            "text-link text-gray-800 font-gotham-rounded font-medium pb-2"
-        },
+        { staticClass: "text-link text-gray-800 font-medium pb-2" },
         [_vm._v("$40,00")]
       ),
       _vm._v(" "),
@@ -34102,8 +34373,7 @@ var staticRenderFns = [
           _c(
             "h5",
             {
-              staticClass:
-                "font-gotham-book text-link text-gray-800 font-semibold"
+              staticClass: "font-gotham text-link text-gray-800 font-semibold"
             },
             [_vm._v("Melinda Gates")]
           ),
@@ -34122,10 +34392,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "flex flex-col items-center" }, [
       _c(
         "strong",
-        {
-          staticClass:
-            "text-link text-gray-800 font-gotham-rounded font-medium pb-2"
-        },
+        { staticClass: "text-link text-gray-800 font-medium pb-2" },
         [_vm._v("$40,00")]
       ),
       _vm._v(" "),
@@ -34146,7 +34413,7 @@ var staticRenderFns = [
           "strong",
           {
             staticClass:
-              "font-gotham-book text-sm text-gray-900 font-semibold leading-5 mr-2"
+              "font-gotham text-sm text-gray-900 font-semibold leading-5 mr-2"
           },
           [_vm._v("Developer to build a custom screensaver for MacOS")]
         ),
@@ -34171,7 +34438,7 @@ var staticRenderFns = [
           "strong",
           {
             staticClass:
-              "font-gotham-book text-sm text-gray-900 font-semibold leading-5 mr-2"
+              "font-gotham text-sm text-gray-900 font-semibold leading-5 mr-2"
           },
           [_vm._v("Developer to build a custom screensaver for MacOS")]
         ),
@@ -34191,7 +34458,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "mt-6" }, [
       _c(
         "strong",
-        { staticClass: "font-gotham-book text-sm text-gray-700 font-semibold" },
+        { staticClass: "font-gotham text-sm text-gray-700 font-semibold" },
         [_vm._v("Posted at:")]
       ),
       _vm._v(" "),
@@ -34207,7 +34474,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "mt-6" }, [
       _c(
         "strong",
-        { staticClass: "font-gotham-book text-sm text-gray-700 font-semibold" },
+        { staticClass: "font-gotham text-sm text-gray-700 font-semibold" },
         [_vm._v("Time in New York:")]
       ),
       _vm._v(" "),
@@ -34221,7 +34488,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "mt-6" }, [
       _c(
         "strong",
-        { staticClass: "font-gotham-book text-sm text-gray-700 font-semibold" },
+        { staticClass: "font-gotham text-sm text-gray-700 font-semibold" },
         [_vm._v("Interviewing:")]
       ),
       _vm._v(" "),
@@ -34235,7 +34502,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "mt-6" }, [
       _c(
         "strong",
-        { staticClass: "font-gotham-book text-sm text-gray-700 font-semibold" },
+        { staticClass: "font-gotham text-sm text-gray-700 font-semibold" },
         [_vm._v("Bids:")]
       ),
       _vm._v(" "),
@@ -34280,22 +34547,14 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "flex flex-wrap w-full my-12" }, [
           _c("div", { staticClass: "w-full lg:w-3/12" }, [
-            _c(
-              "h4",
-              {
-                staticClass:
-                  "font-gotham-rounded text-gray-900 font-medium text-xl"
-              },
-              [_vm._v("\n        Settings\n      ")]
-            ),
+            _c("h4", { staticClass: "text-gray-900 font-medium text-xl" }, [
+              _vm._v("\n        Settings\n      ")
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "flex flex-col mt-10" }, [
               _c(
                 "h5",
-                {
-                  staticClass:
-                    "font-gotham-rounded text-gray-900 text-base font-normal mb-4"
-                },
+                { staticClass: "text-gray-900 text-base font-normal mb-4" },
                 [_vm._v("\n          Account\n        ")]
               ),
               _vm._v(" "),
@@ -34323,10 +34582,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "flex flex-col mt-10" }, [
               _c(
                 "h5",
-                {
-                  staticClass:
-                    "font-gotham-rounded text-gray-900 text-base font-normal mb-4"
-                },
+                { staticClass: "text-gray-900 text-base font-normal mb-4" },
                 [_vm._v("\n          Payments\n        ")]
               ),
               _vm._v(" "),
@@ -34343,7 +34599,7 @@ var staticRenderFns = [
               _c(
                 "a",
                 {
-                  staticClass: "my-2 text-sm font-gotham-rounded text-primary",
+                  staticClass: "my-2 text-sm text-primary",
                   attrs: { href: "#" }
                 },
                 [_vm._v("Withdraw Methods")]
@@ -34353,10 +34609,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "flex flex-col mt-10" }, [
               _c(
                 "h5",
-                {
-                  staticClass:
-                    "font-gotham-rounded text-gray-900 text-base font-normal mb-4"
-                },
+                { staticClass: "text-gray-900 text-base font-normal mb-4" },
                 [_vm._v("\n          Notification\n        ")]
               ),
               _vm._v(" "),
@@ -34384,10 +34637,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "flex flex-col mt-10" }, [
               _c(
                 "h5",
-                {
-                  staticClass:
-                    "font-gotham-rounded text-gray-900 text-base font-normal mb-4"
-                },
+                { staticClass: "text-gray-900 text-base font-normal mb-4" },
                 [_vm._v("\n          Verification\n        ")]
               ),
               _vm._v(" "),
@@ -34415,10 +34665,7 @@ var staticRenderFns = [
             _c("div", { staticClass: "flex flex-col mt-10" }, [
               _c(
                 "h5",
-                {
-                  staticClass:
-                    "font-gotham-rounded text-gray-900 text-base font-normal mb-4"
-                },
+                { staticClass: "text-gray-900 text-base font-normal mb-4" },
                 [_vm._v("\n          Security\n        ")]
               ),
               _vm._v(" "),
@@ -34463,7 +34710,7 @@ var staticRenderFns = [
                   "h5",
                   {
                     staticClass:
-                      "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                      "card-header card-header-custom text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                   },
                   [_vm._v("\n          Add Methods\n        ")]
                 ),
@@ -34485,7 +34732,7 @@ var staticRenderFns = [
                   "h5",
                   {
                     staticClass:
-                      "card-header card-header-custom font-gotham-rounded text-gray-700 text-base font-medium py-6 border-b border-gray-200"
+                      "card-header card-header-custom text-gray-700 text-base font-medium py-6 border-b border-gray-200"
                   },
                   [_vm._v("\n          Withdraw Methods\n        ")]
                 ),
@@ -57710,6 +57957,318 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/UI/KitUI.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/UI/KitUI.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _KitUI_vue_vue_type_template_id_f3f4634c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KitUI.vue?vue&type=template&id=f3f4634c& */ "./resources/js/components/UI/KitUI.vue?vue&type=template&id=f3f4634c&");
+/* harmony import */ var _KitUI_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./KitUI.vue?vue&type=script&lang=js& */ "./resources/js/components/UI/KitUI.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _KitUI_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _KitUI_vue_vue_type_template_id_f3f4634c___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _KitUI_vue_vue_type_template_id_f3f4634c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/UI/KitUI.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/KitUI.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/UI/KitUI.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_KitUI_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./KitUI.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/KitUI.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_KitUI_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/KitUI.vue?vue&type=template&id=f3f4634c&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/UI/KitUI.vue?vue&type=template&id=f3f4634c& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_KitUI_vue_vue_type_template_id_f3f4634c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./KitUI.vue?vue&type=template&id=f3f4634c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/KitUI.vue?vue&type=template&id=f3f4634c&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_KitUI_vue_vue_type_template_id_f3f4634c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_KitUI_vue_vue_type_template_id_f3f4634c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/accordion/Accordion.vue":
+/*!************************************************************!*\
+  !*** ./resources/js/components/UI/accordion/Accordion.vue ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Accordion_vue_vue_type_template_id_2f1f5b9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Accordion.vue?vue&type=template&id=2f1f5b9e& */ "./resources/js/components/UI/accordion/Accordion.vue?vue&type=template&id=2f1f5b9e&");
+/* harmony import */ var _Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Accordion.vue?vue&type=script&lang=js& */ "./resources/js/components/UI/accordion/Accordion.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Accordion_vue_vue_type_template_id_2f1f5b9e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Accordion_vue_vue_type_template_id_2f1f5b9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/UI/accordion/Accordion.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/accordion/Accordion.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/UI/accordion/Accordion.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Accordion.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/Accordion.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/accordion/Accordion.vue?vue&type=template&id=2f1f5b9e&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/UI/accordion/Accordion.vue?vue&type=template&id=2f1f5b9e& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_template_id_2f1f5b9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Accordion.vue?vue&type=template&id=2f1f5b9e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/Accordion.vue?vue&type=template&id=2f1f5b9e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_template_id_2f1f5b9e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Accordion_vue_vue_type_template_id_2f1f5b9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/accordion/AccordionItem.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/UI/accordion/AccordionItem.vue ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _AccordionItem_vue_vue_type_template_id_26d6fb64___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AccordionItem.vue?vue&type=template&id=26d6fb64& */ "./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=template&id=26d6fb64&");
+/* harmony import */ var _AccordionItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AccordionItem.vue?vue&type=script&lang=js& */ "./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _AccordionItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _AccordionItem_vue_vue_type_template_id_26d6fb64___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _AccordionItem_vue_vue_type_template_id_26d6fb64___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/UI/accordion/AccordionItem.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccordionItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccordionItem.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_AccordionItem_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=template&id=26d6fb64&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=template&id=26d6fb64& ***!
+  \***********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccordionItem_vue_vue_type_template_id_26d6fb64___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./AccordionItem.vue?vue&type=template&id=26d6fb64& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/accordion/AccordionItem.vue?vue&type=template&id=26d6fb64&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccordionItem_vue_vue_type_template_id_26d6fb64___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AccordionItem_vue_vue_type_template_id_26d6fb64___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/buttons/ButtonBase.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/UI/buttons/ButtonBase.vue ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ButtonBase_vue_vue_type_template_id_13a9bcb1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ButtonBase.vue?vue&type=template&id=13a9bcb1& */ "./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=template&id=13a9bcb1&");
+/* harmony import */ var _ButtonBase_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonBase.vue?vue&type=script&lang=js& */ "./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ButtonBase_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ButtonBase_vue_vue_type_template_id_13a9bcb1___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ButtonBase_vue_vue_type_template_id_13a9bcb1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/UI/buttons/ButtonBase.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonBase_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ButtonBase.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonBase_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=template&id=13a9bcb1&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=template&id=13a9bcb1& ***!
+  \******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonBase_vue_vue_type_template_id_13a9bcb1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ButtonBase.vue?vue&type=template&id=13a9bcb1& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/UI/buttons/ButtonBase.vue?vue&type=template&id=13a9bcb1&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonBase_vue_vue_type_template_id_13a9bcb1___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonBase_vue_vue_type_template_id_13a9bcb1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/UI/index.js":
+/*!*********************************************!*\
+  !*** ./resources/js/components/UI/index.js ***!
+  \*********************************************/
+/*! exports provided: Accordion, AccordionItem, ButtonBase */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _accordion_Accordion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./accordion/Accordion */ "./resources/js/components/UI/accordion/Accordion.vue");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Accordion", function() { return _accordion_Accordion__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
+/* harmony import */ var _accordion_AccordionItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./accordion/AccordionItem */ "./resources/js/components/UI/accordion/AccordionItem.vue");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AccordionItem", function() { return _accordion_AccordionItem__WEBPACK_IMPORTED_MODULE_1__["default"]; });
+
+/* harmony import */ var _buttons_ButtonBase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./buttons/ButtonBase */ "./resources/js/components/UI/buttons/ButtonBase.vue");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ButtonBase", function() { return _buttons_ButtonBase__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/**
+ * -----------------------------------------------------------
+ * Accordion
+ * -----------------------------------------------------------
+ */
+
+
+/**
+ * -----------------------------------------------------------
+ * Button
+ * -----------------------------------------------------------
+ */
+
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/account/SelectAccountType.vue":
 /*!***************************************************************!*\
   !*** ./resources/js/components/account/SelectAccountType.vue ***!
@@ -58639,12 +59198,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_CardInputSearch__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/CardInputSearch */ "./resources/js/components/CardInputSearch.vue");
 /* harmony import */ var _components_freelancers_FreelancerCard__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../components/freelancers/FreelancerCard */ "./resources/js/components/freelancers/FreelancerCard.vue");
 /* harmony import */ var _components_account_SelectAccountType__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../components/account/SelectAccountType */ "./resources/js/components/account/SelectAccountType.vue");
-/* harmony import */ var _layouts_Navbar__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../layouts/Navbar */ "./resources/js/layouts/Navbar.vue");
-/* harmony import */ var _layouts_Footer__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../layouts/Footer */ "./resources/js/layouts/Footer.vue");
-/* harmony import */ var _views_jobs_Show__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../views/jobs/Show */ "./resources/js/views/jobs/Show.vue");
-/* harmony import */ var _views_jobs_Index__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../views/jobs/Index */ "./resources/js/views/jobs/Index.vue");
-/* harmony import */ var _views_freelancers_Index__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../views/freelancers/Index */ "./resources/js/views/freelancers/Index.vue");
-/* harmony import */ var _views_settings_WithdrawMethod__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../views/settings/WithdrawMethod */ "./resources/js/views/settings/WithdrawMethod.vue");
+/* harmony import */ var _components_UI_KitUI_vue__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../components/UI/KitUI.vue */ "./resources/js/components/UI/KitUI.vue");
+/* harmony import */ var _components_UI__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../components/UI */ "./resources/js/components/UI/index.js");
+/* harmony import */ var _layouts_Navbar__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../layouts/Navbar */ "./resources/js/layouts/Navbar.vue");
+/* harmony import */ var _layouts_Footer__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../layouts/Footer */ "./resources/js/layouts/Footer.vue");
+/* harmony import */ var _views_jobs_Show__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../views/jobs/Show */ "./resources/js/views/jobs/Show.vue");
+/* harmony import */ var _views_jobs_Index__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../views/jobs/Index */ "./resources/js/views/jobs/Index.vue");
+/* harmony import */ var _views_freelancers_Index__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../views/freelancers/Index */ "./resources/js/views/freelancers/Index.vue");
+/* harmony import */ var _views_settings_WithdrawMethod__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../views/settings/WithdrawMethod */ "./resources/js/views/settings/WithdrawMethod.vue");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 
 
@@ -58665,6 +59238,9 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
 
 
 
+
+
+ // KIT UI
 
 
  // Import layouts
@@ -58705,6 +59281,15 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
           return route(name, params, absolute);
         })
       }
+    }); //KIT UI
+
+    Vue.component('kit-ui', _components_UI_KitUI_vue__WEBPACK_IMPORTED_MODULE_21__["default"]);
+    Object.entries(_components_UI__WEBPACK_IMPORTED_MODULE_22__).forEach(function (_ref) {
+      var _ref2 = _slicedToArray(_ref, 2),
+          name = _ref2[0],
+          component = _ref2[1];
+
+      Vue.component(name, component);
     }); // Register components.
 
     Vue.use(vue_country_region_select__WEBPACK_IMPORTED_MODULE_13___default.a);
@@ -58715,8 +59300,8 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
     Vue.component('slide-up-down', vue_slide_up_down__WEBPACK_IMPORTED_MODULE_6__["default"]);
     Vue.component('vue-tags-input', _johmun_vue_tags_input__WEBPACK_IMPORTED_MODULE_12___default.a); // Register custom components.
 
-    Vue.component('navbar', _layouts_Navbar__WEBPACK_IMPORTED_MODULE_21__["default"]);
-    Vue.component('footerr', _layouts_Footer__WEBPACK_IMPORTED_MODULE_22__["default"]);
+    Vue.component('navbar', _layouts_Navbar__WEBPACK_IMPORTED_MODULE_23__["default"]);
+    Vue.component('footerr', _layouts_Footer__WEBPACK_IMPORTED_MODULE_24__["default"]);
     Vue.component('pagination', _components_LaravelVuePagination__WEBPACK_IMPORTED_MODULE_17__["default"]);
     Vue.component('card-result', _components_CardResult__WEBPACK_IMPORTED_MODULE_15__["default"]);
     Vue.component('card-filter', _components_CardFilter__WEBPACK_IMPORTED_MODULE_14__["default"]);
@@ -58724,12 +59309,13 @@ window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js")
     Vue.component('freelancerCard', _components_freelancers_FreelancerCard__WEBPACK_IMPORTED_MODULE_19__["default"]);
     Vue.component('expander-filter', _components_ExpanderFilter__WEBPACK_IMPORTED_MODULE_16__["default"]);
     Vue.component('card-input-search', _components_CardInputSearch__WEBPACK_IMPORTED_MODULE_18__["default"]);
-    Vue.component('select-account-type', _components_account_SelectAccountType__WEBPACK_IMPORTED_MODULE_20__["default"]); // Register pages
+    Vue.component('select-account-type', _components_account_SelectAccountType__WEBPACK_IMPORTED_MODULE_20__["default"]);
+    Vue.component('kit-ui', _components_UI_KitUI_vue__WEBPACK_IMPORTED_MODULE_21__["default"]); // Register pages
 
-    Vue.component('job-show', _views_jobs_Show__WEBPACK_IMPORTED_MODULE_23__["default"]);
-    Vue.component('job-index', _views_jobs_Index__WEBPACK_IMPORTED_MODULE_24__["default"]);
-    Vue.component('withdraw-method', _views_settings_WithdrawMethod__WEBPACK_IMPORTED_MODULE_26__["default"]);
-    Vue.component('freelancer-index', _views_freelancers_Index__WEBPACK_IMPORTED_MODULE_25__["default"]);
+    Vue.component('job-show', _views_jobs_Show__WEBPACK_IMPORTED_MODULE_25__["default"]);
+    Vue.component('job-index', _views_jobs_Index__WEBPACK_IMPORTED_MODULE_26__["default"]);
+    Vue.component('withdraw-method', _views_settings_WithdrawMethod__WEBPACK_IMPORTED_MODULE_28__["default"]);
+    Vue.component('freelancer-index', _views_freelancers_Index__WEBPACK_IMPORTED_MODULE_27__["default"]);
   }
 });
 

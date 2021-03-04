@@ -1,12 +1,12 @@
 <template>
   <li
-    class="lg:z-20  uppercase border-b lg:border-none border-gray-200 relative"
+    class="lg:z-20 border-b lg:border-none border-gray-200 relative"
     @mouseover="open = true"
     @mouseleave="open = false"
   >
     <div class="flex justify-between items-center">
       <a 
-        class="block lg:inline-block text-gray-600 text-link px-0 lg:px-4 py-4 dropdown-toggle" 
+        class="block lg:inline-block text-gray-500 text-base font-medium px-0 lg:px-4 py-4 dropdown-toggle" 
         :class="open || active ? 'text-primary': ''" 
         :href="link"
       >

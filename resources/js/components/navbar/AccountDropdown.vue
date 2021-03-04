@@ -17,10 +17,10 @@
     <!-- Dropdown -->
     <!-- style="top: 42px; width: 400px;" class="absolute right-0 mt-4 py-2 bg-white rounded-none shadow-md hidden sm:block" -->
     <div
-      :class="open ? 'lg:block' : 'lg:hidden'"
-      class="w-full lg:w-300px lg:flex-1 lg:absolute lg:right-0 mt-2 -mb-2 lg:mt-4 lg:py-2 bg-white rounded-none lg:shadow-dropdown block tw-account-dropdown"
+      :class="open ? 'lg:visible lg:translate-y-0 lg:opacity-100' : 'lg:-translate-y-1 lg:opacity-0 lg:invisible'"
+      class="lg:transform lg:translate-x-5 lg:transition-all lg:duration-300 lg:ease-in-out w-full lg:w-300px lg:flex-1 lg:absolute lg:right-0 mt-2 -mb-2 lg:mt-4 lg:py-2 bg-white rounded-none lg:shadow-dropdown block tw-account-dropdown"
     >
-      <div class="block px-1 lg:px-4 py-2 hover:bg-gray-200 cursor-pointer lg:mx-2 rounded-none flex justify-start items-center transition ease-in-out duration-300">
+      <div class="px-1 lg:px-4 py-2 hover:bg-gray-200 cursor-pointer lg:mx-2 rounded-none flex justify-start items-center transition ease-in-out duration-300">
         <button class="relative z-10 block h-10 w-10 rounded-full overflow-hidden border-4 border-gray-300 focus:outline-none">
           <img
             class="h-full w-full object-cover rounded-full"
@@ -29,11 +29,8 @@
           >
         </button>
         <div class="flex flex-col justify-start items-start pl-2 leading-4">
-          <span
-            class="select-none antialiased  text-link text-gray-700 font-normal"
-            style="font-size: 14px;"
-          >Melinda Gates</span>
-          <span class="select-none text-gray-500 text-sm">Graphic Designer</span>
+          <span class="select-none antialiased text-base text-gray-600 font-light">Melinda Gates</span>
+          <span class="select-none text-gray-500 text-sm font-medium">Graphic Designer</span>
         </div>
       </div>
 
@@ -168,7 +165,7 @@ export default {
 <style lang="scss">
   .tw-account-dropdown-box {
     .tw-account-dropdown {
-      transform: translateX(7%);
+      //transform: translateX(7%);
       &:before {
         content: '';
         position: absolute;

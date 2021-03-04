@@ -4,7 +4,7 @@
     class="relative flex"
   >
     <button
-      class="flex items-center focus:ring-2 focus:ring-offset-1 focus:ring-offset-blue-100 border-2 py-3 px-5 rounded-none focus:outline-none"
+      class="flex items-center transition duration-300 ease rounded-sm focus:ring-2 focus:ring-offset-1 focus:ring-offset-blue-100 border-2 py-3 px-5 focus:outline-none"
       @click="open = !open"
     >
       <span class="text-sm font-semibold">English</span>
@@ -15,8 +15,8 @@
       </span>
     </button>
     <div
-      :class="open ? 'translate-y-16 opacity-100' : 'translate-y-14 opacity-0'"
-      class="transform transition-all duration-300 ease-in-out float-none absolute right-0 tw-dropdown-language shadow-btn-hover bg-white list-none text-left min-w-10rem py-2 mt-1"
+      :class="open ? 'visible translate-y-16 opacity-100' : 'translate-y-14 opacity-0 invisible'"
+      class="transform transition-all duration-300 ease-in-out absolute right-0 tw-dropdown-language shadow-btn-hover bg-white list-none text-left min-w-10rem py-2 mt-1"
     >
       <a
         href="#"

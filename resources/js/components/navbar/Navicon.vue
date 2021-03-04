@@ -28,7 +28,7 @@
     </div>
     <div
       v-if="counter >= 1"
-      class="select-none bg-primary absolute top-0 right-0 w-6 h-6 text-xxs font-semibold flex items-center justify-center text-center rounded-full text-white ml-4 -mt-2"
+      class="select-none bg-primary absolute top-0 right-0 w-6 h-6 text-xxs font-bold flex items-center justify-center rounded-full text-white ml-4 -mt-2"
     >
       {{ counter }}
     </div>

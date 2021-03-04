@@ -12,7 +12,7 @@ require('laravel-mix-tailwind');
  |
  */
 
-mix.browserSync('localhost:8000');
+mix.browserSync('twiworker.test');
 
 mix.disableNotifications()
    .js('resources/js/app.js', 'public/js')

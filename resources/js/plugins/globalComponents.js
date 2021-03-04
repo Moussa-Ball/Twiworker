@@ -14,6 +14,10 @@ import {Vue2Storage} from 'vue2-storage'
 import VueTagsInput from '@johmun/vue-tags-input';
 import vueCountryRegionSelect from 'vue-country-region-select';
 
+// Import simplebar
+import simplebar from 'simplebar-vue';
+import 'simplebar/dist/simplebar.min.css';
+
 // Import custom components
 import CardFilter from '../components/CardFilter'
 import CardResult from '../components/CardResult'
@@ -65,6 +69,7 @@ export default {
 
     // Register components.
     Vue.use(vueCountryRegionSelect);
+    Vue.component('simplebar', simplebar);
     Vue.component("tippy", TippyComponent);
     Vue.component('vue-circle', VueCircle);
     Vue.component("multiselect", Multiselect);

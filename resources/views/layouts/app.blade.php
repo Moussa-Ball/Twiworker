@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="bg-body antialiased leading-none overflow-x-hidden">
+<body class="bg-body antialiased overflow-x-hidden font-inter text-base text-black font-feature-default">
     <div id="app">
         <navbar :auth="{{ (Auth::check()) ? 'true' : 'false' }}" token="{{ csrf_token() }}"></navbar>
         <main role="main">

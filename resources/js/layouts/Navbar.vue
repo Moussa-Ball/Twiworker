@@ -1,7 +1,7 @@
 <template>
   <nav class="relative flex flex-wrap items-center justify-between w-full bg-white shadow-md lg:px-6 py-4 lg:py-2">
     <div class="container mx-auto px-4 lg:px-6 flex flex-wrap items-center justify-between">
-      <!-- Logo link -->
+      <!-- LOGO -->
       <a
         href="/"
       >
@@ -37,28 +37,28 @@
       <!-- For responsive menu when the user is not authenticated. -->
       <slide-up-down
         v-if="!auth"
-        class="w-full lg:flex lg:items-center lg:w-auto lg:hidden"
+        class="w-full lg:hidden lg:items-center lg:w-auto"
         :active="open"
         :duration="300"
       >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto pt-4 lg:pt-0">
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 hover:text-primary font-medium text-base px-0 lg:px-4 py-4"
               :class="{'text-primary': loginRouteActive}"
               :href="loginRoute"
             >Sign in</a>
           </li>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 hover:text-primary font-medium text-base px-0 lg:px-4 py-4"
               :class="{'text-primary': registerRouteActive}"
               :href="registerRoute"
             >Sign up</a>
           </li>
-          <li class=" uppercase lg:normal-case">
+          <li class="lg:normal-case">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal"
+              class="block lg:inline-block text-gray-500 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-base px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-medium"
               href="#"
             >Post a Job</a>
           </li>
@@ -68,7 +68,7 @@
       <!-- For responsive menu when the user is authenticated. -->
       <slide-up-down
         v-if="auth"
-        class="w-full lg:flex lg:items-center lg:w-auto lg:hidden"
+        class="w-full lg:items-center lg:w-auto lg:hidden"
         :active="open"
         :duration="300"
       >
@@ -94,21 +94,21 @@
               href="#"
             >My Contracts</a>
           </DropdownMenu>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4"
               href="#"
             >Freelancers</a>
           </li>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4"
               href="#"
             >Profile</a>
           </li>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4"
               href="#"
             >Reports</a>
           </li>
@@ -139,43 +139,43 @@
       >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto">
           <DropdownMenu
-            name="Jobs"
-            link="#"
+            name="Find Jobs"
+            :link="route('jobs.index')"
           >
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none"
               :href="route('jobs.index')"
             >
               News Feed
             </a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none"
               href="#"
             >Search Job</a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none"
               href="#"
             >My biddings</a>
             <a
-              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent  text-gray-700 hover:bg-gray-200 capitalize border-none"
+              class="block w-full px-4 py-2 clear-both font-medium text-sm bg-transparent text-gray-500 hover:bg-gray-200 capitalize border-none"
               href="#"
             >My Contracts</a>
           </DropdownMenu>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4"
               :href="route('freelancers.index')"
             >Freelancers</a>
           </li>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4"
               href="#"
             >Profile</a>
           </li>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 font-medium hover:text-primary text-base px-0 lg:px-4 py-4"
               href="#"
             >Reports</a>
           </li>
@@ -188,29 +188,30 @@
         class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:pt-0"
       >
         <ul class="lg:flex lg:items-center md:block pl-0 m-0 leading-none mr-auto">
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 hover:text-primary text-base font-medium px-0 lg:px-4 py-4"
               :class="{'text-primary': loginRouteActive}"
               :href="loginRoute"
             >Sign in</a>
           </li>
-          <li class=" uppercase border-b lg:border-none border-gray-200">
+          <li class="border-b lg:border-none border-gray-200">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary text-link px-0 lg:px-4 py-4"
+              class="block lg:inline-block text-gray-500 hover:text-primary text-base font-medium px-0 lg:px-4 py-4"
               :class="{'text-primary': registerRouteActive}"
               :href="registerRoute"
             >Sign up</a>
           </li>
-          <li class=" uppercase lg:normal-case">
+          <li class="lg:normal-case">
             <a
-              class="block lg:inline-block text-gray-600 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-95 lg:hover:shadow-btn-hover trasition duration-300 lg:bg-primary lg:shadow-dropdown lg:text-white text-link px-0 lg:px-4 lg:py-3 py-4 lg:ml-4 font-normal"
+              class="block transition duration-300 ease lg:inline-block text-gray-500 hover:text-primary lg:hover:text-white lg:hover:bg-opacity-90 lg:hover:shadow-btn-hover lg:bg-primary lg:shadow-dropdown lg:text-white text-base px-0 lg:px-4 lg:py-2 py-4 lg:ml-4 font-medium"
               href="#"
             >Post a Job</a>
           </li>
         </ul>
       </div>
 
+      <!-- Right Section Icons -->
       <div
         v-if="auth"
         class="hidden w-full lg:flex lg:items-center lg:w-auto pt-4 lg:py-0"
